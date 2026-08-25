@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <div class="overlay">
+                <h2>Welcome</h2>
+                <p>Log in to your account</p>
+            </div>
+        </div>
+        
+        <div class="card-form">
+            <h1>Log In</h1>
+            <form id="form">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="johndoe">
+                    <div class="error" id="usernameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="••••••••">
+                    <div class="error" id="passwordError"></div>
+                </div>
+                <button type="submit">Log In</button>
+            </form>
+            <div class="success" id="success">✓ Welcome back!</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

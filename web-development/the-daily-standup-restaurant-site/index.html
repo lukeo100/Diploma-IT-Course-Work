@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Daily Standup | Where Code Meets Cuisine</title>
+    <meta
+      name="description"
+      content="The Daily Standup - a restaurant where code meets cuisine. Modern Australian dining with a tech twist."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/pages.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="header__inner">
+        <a href="#/home" class="header__logo">
+          <span class="header__logo-icon">&lt;/&gt;</span>
+          <span class="header__logo-text">The Daily Standup</span>
+        </a>
+        <nav class="header__nav" id="mainNav">
+          <a href="#/home" class="header__nav-link active" data-page="home"
+            >Home</a
+          >
+          <a href="#/menu" class="header__nav-link" data-page="menu">Menu</a>
+          <a href="#/order" class="header__nav-link" data-page="order">Order</a>
+          <a href="#/history" class="header__nav-link" data-page="history"
+            >Our Story</a
+          >
+          <a href="#/contact" class="header__nav-link" data-page="contact"
+            >Contact</a
+          >
+        </nav>
+        <div class="header__actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode"
+          >
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="theme-toggle__icon theme-toggle__icon--moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button
+            class="header__hamburger"
+            id="hamburgerBtn"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main" id="mainContent">
+      <section class="page page--home" id="page-home">
+        <div class="hero">
+          <div
+            class="hero__bg"
+            style="background-image: url(&quot;images/hero.jpg&quot;)"
+          ></div>
+          <div class="hero__overlay"></div>
+          <div class="hero__content reveal">
+            <h1 class="hero__title">The Daily Standup</h1>
+            <p class="hero__tagline">Where Code Meets Cuisine</p>
+            <p class="hero__sub">
+              Modern Australian dining with a developer's twist. Great food,
+              great coffee, great conversations.
+            </p>
+            <div class="hero__actions">
+              <a href="#/menu" class="btn btn--primary">View Menu</a>
+              <a href="#/order" class="btn btn--outline">Order Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="home-blurb">
+          <div class="container">
+            <div class="home-blurb__inner reveal">
+              <h2 class="section-title">Fuel for Thinkers</h2>
+              <p class="home-blurb__text">
+                Whether you're debugging code at 2 AM or winding down after a
+                sprint review, The Daily Standup is your sanctuary. We serve
+                honest, flavourful food crafted with locally sourced
+                ingredients, paired with specialty coffee and a curated drinks
+                list.
+              </p>
+              <p class="home-blurb__text">
+                Our menu is inspired by the world of tech &mdash; because the
+                best ideas come when you're well-fed and caffeinated.
+              </p>
+              <div class="home-blurb__features">
+                <div class="feature-card reveal">
+                  <div class="feature-card__icon">&#9749;</div>
+                  <h3 class="feature-card__title">Specialty Coffee</h3>
+                  <p class="feature-card__text">
+                    Single-origin beans roasted locally. From pour-over to
+                    espresso, we take our brew seriously.
+                  </p>
+                </div>
+                <div class="feature-card reveal">
+                  <div class="feature-card__icon">&#127860;</div>
+                  <h3 class="feature-card__title">Fresh & Local</h3>
+                  <p class="feature-card__text">
+                    Seasonal ingredients sourced from local farms. Our menu
+                    evolves with the harvest.
+                  </p>
+                </div>
+                <div class="feature-card reveal">
+                  <div class="feature-card__icon">&#128187;</div>
+                  <h3 class="feature-card__title">Dev Friendly</h3>
+                  <p class="feature-card__text">
+                    Free high-speed Wi-Fi, power outlets at every table, and a
+                    quiet corner for focused work.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-card reveal" style="margin-top: 50px">
+                <h2>Menu Item of the Day</h2>
+                <p id="menuItemOfTheDay" style="color: rgb(48, 110, 48)">-</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page--menu" id="page-menu">
+        <div class="container">
+          <div class="page-header reveal">
+            <h1 class="page-header__title">Our Menu</h1>
+            <p class="page-header__subtitle">
+              Every dish has a story. Most of them involve semicolons.
+            </p>
+          </div>
+          <div class="menu-filters reveal" id="menuFilters">
+            <button class="menu-filter active" data-category="all">All</button>
+          </div>
+          <div class="menu-grid" id="menuGrid">
+            <!-- Populated by JS -->
+          </div>
+        </div>
+      </section>
+
+      <section class="page page--order" id="page-order">
+        <div class="container">
+          <div class="page-header reveal">
+            <h1 class="page-header__title">Place an Order</h1>
+            <p class="page-header__subtitle">
+              Select your items, choose your table, and we'll handle the rest.
+            </p>
+          </div>
+          <div class="order-layout">
+            <div class="order-items reveal">
+              <h2 class="order-section-title">Select Items</h2>
+              <div class="order-categories" id="orderCategories">
+                <!-- Populated by JS -->
+              </div>
+              <div class="order-item-list" id="orderItemList">
+                <!-- Populated by JS -->
+              </div>
+            </div>
+            <div class="order-sidebar reveal">
+              <h2 class="order-section-title">Your Order</h2>
+              <div class="order-summary" id="orderSummary">
+                <p class="order-empty">No items selected yet.</p>
+              </div>
+              <div class="order-form">
+                <div class="form-group">
+                  <label for="customerName">Your Name</label>
+                  <input
+                    type="text"
+                    id="customerName"
+                    placeholder="e.g. Ada Lovelace"
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="tableNumber">Table Number</label>
+                  <select id="tableNumber" class="form-input">
+                    <option value="">Select a table...</option>
+                  </select>
+                </div>
+                <div class="order-total" id="orderTotal">
+                  <span>Total:</span>
+                  <span class="order-total__price" id="totalPrice">$0.00</span>
+                </div>
+                <div class="payment-form" id="paymentForm">
+                  <h3 class="payment-form__title">Payment Details</h3>
+                  <div class="form-group">
+                    <label for="cardName">Name on Card</label>
+                    <input
+                      type="text"
+                      id="cardName"
+                      placeholder="ADA LOVELACE"
+                      class="form-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input
+                      type="text"
+                      id="cardNumber"
+                      placeholder="4242 4242 4242 4242"
+                      class="form-input"
+                      maxlength="19"
+                    />
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="cardExpiry">Expiry</label>
+                      <input
+                        type="text"
+                        id="cardExpiry"
+                        placeholder="MM/YY"
+                        class="form-input"
+                        maxlength="5"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="cardCVV">CVV</label>
+                      <input
+                        type="text"
+                        id="cardCVV"
+                        placeholder="123"
+                        class="form-input"
+                        maxlength="3"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn--primary btn--full" id="placeOrderBtn">
+                  Place Order
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-toast" id="orderToast">
+          <div class="order-toast__content">
+            <span class="order-toast__icon">&#10003;</span>
+            <span class="order-toast__text">Order placed successfully!</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page--history" id="page-history">
+        <div class="container">
+          <div class="page-header reveal">
+            <h1 class="page-header__title">Our Story</h1>
+            <p class="page-header__subtitle">
+              From a kitchen in a shared flat to your favourite local.
+            </p>
+          </div>
+          <div class="history-content">
+            <div class="history-intro reveal">
+              <div class="history-intro__text">
+                <p>
+                  It started with a hackathon in 2017. Two software developers
+                  &mdash; Sam and Jordan &mdash; were pulling an all-nighter at
+                  a startup weekend when they hit a wall. Not a coding wall, but
+                  a hunger wall. The vending machine was empty, the pizza place
+                  had closed, and the office microwave had mysteriously stopped
+                  working.
+                </p>
+                <p>
+                  At 3 AM, Sam pulled out a portable stove and a bag of
+                  ingredients they'd packed "just in case." Jordan raided the
+                  pantry for spices. Within thirty minutes, the most incredible
+                  aromas filled the co-working space. Other hackers abandoned
+                  their keyboards and gathered around. That night, over a
+                  makeshift meal of spicy noodles and garlic bread, an idea was
+                  born.
+                </p>
+              </div>
+              <div class="history-intro__image-placeholder">
+                <div class="history-image-frame">
+                  <span class="history-image-frame__icon">&#127859;</span>
+                  <span class="history-image-frame__caption"
+                    >The legendary 3 AM noodles</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="history-narrative reveal">
+              <p>
+                "We spent our days writing code and our nights dreaming about
+                food," Jordan recalled in a 2019 interview with
+                <em>Bite Magazine</em>. "One day we just looked at each other
+                and said: what if we did the thing we actually loved?"
+              </p>
+              <p>
+                Sam had spent years working as a chef before pivoting to
+                software engineering during the tech boom. Jordan had always
+                been the one hosting dinner parties, experimenting with fusion
+                recipes, and running food blogs on the side. Together, they had
+                the perfect blend of technical precision and culinary
+                creativity.
+              </p>
+            </div>
+            <div class="timeline reveal">
+              <h2 class="timeline__title">Milestones</h2>
+              <div class="timeline__items">
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__card">
+                    <span class="timeline__year">2017</span>
+                    <h3 class="timeline__card-title">The Hackathon Meal</h3>
+                    <p class="timeline__card-text">
+                      Sam and Jordan's legendary 3 AM meal sparks an idea at a
+                      Melbourne startup weekend.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__card">
+                    <span class="timeline__year">2018</span>
+                    <h3 class="timeline__card-title">The First Pop-Up</h3>
+                    <p class="timeline__card-text">
+                      Operating out of a shared commercial kitchen, they run
+                      weekend pop-ups from a converted food truck. Word spreads
+                      fast.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__card">
+                    <span class="timeline__year">2019</span>
+                    <h3 class="timeline__card-title">Doors Open</h3>
+                    <p class="timeline__card-text">
+                      The Daily Standup opens its permanent home in Fitzroy,
+                      Melbourne. The name is a nod to their agile roots &mdash;
+                      a place to gather, share, and fuel up.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__card">
+                    <span class="timeline__year">2021</span>
+                    <h3 class="timeline__card-title">The Expansion</h3>
+                    <p class="timeline__card-text">
+                      After weathering the toughest years in hospitality, we
+                      expand to include a dedicated coffee bar and co-working
+                      nook.
+                    </p>
+                  </div>
+                </div>
+                <div class="timeline__item">
+                  <div class="timeline__dot"></div>
+                  <div class="timeline__card">
+                    <span class="timeline__year">Today</span>
+                    <h3 class="timeline__card-title">Still Shipping</h3>
+                    <p class="timeline__card-text">
+                      Continuously deploying great food and coffee. No
+                      regressions, only features.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history-quote reveal">
+              <blockquote>
+                <p>
+                  "Every great standup starts with good fuel. We just happen to
+                  serve ours on a plate."
+                </p>
+                <cite>&mdash; Sam &amp; Jordan, Co-Founders</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page page--contact" id="page-contact">
+        <div class="container">
+          <div class="page-header reveal">
+            <h1 class="page-header__title">Get in Touch</h1>
+            <p class="page-header__subtitle">
+              Questions, feedback, or just want to say g'day? We'd love to hear
+              from you.
+            </p>
+          </div>
+          <div class="contact-layout">
+            <div class="contact-info reveal">
+              <div class="contact-card">
+                <h3 class="contact-card__title">Location</h3>
+                <p class="contact-card__text">
+                  123ardware Lane<br />Fitzroy, VIC 3065<br />Melbourne,
+                  Australia
+                </p>
+              </div>
+              <div class="contact-card">
+                <h3 class="contact-card__title">Hours</h3>
+                <div class="contact-hours">
+                  <div class="contact-hours__row">
+                    <span>Monday &ndash; Friday</span>
+                    <span>7:00 AM &ndash; 9:00 PM</span>
+                  </div>
+                  <div class="contact-hours__row">
+                    <span>Saturday</span>
+                    <span>8:00 AM &ndash; 10:00 PM</span>
+                  </div>
+                  <div class="contact-hours__row">
+                    <span>Sunday</span>
+                    <span>8:00 AM &ndash; 8:00 PM</span>
+                  </div>
+                  <div class="contact-hours__row">
+                    <span>Public Holidays</span>
+                    <span>9:00 AM &ndash; 6:00 PM</span>
+                  </div>
+                </div>
+              </div>
+              <div class="contact-card">
+                <h3 class="contact-card__title">Contact</h3>
+                <p class="contact-card__text">
+                  <a href="tel:+61390123456" class="contact-link"
+                    >&#9743; (03) 9012 3456</a
+                  ><br />
+                  <a
+                    href="mailto:hello@thedailystandup.com.au"
+                    class="contact-link"
+                    >&#9993; hello@thedailystandup.com.au</a
+                  >
+                </p>
+              </div>
+              <div class="contact-map">
+                <div class="contact-map__placeholder">
+                  <span class="contact-map__pin">&#128205;</span>
+                  <span class="contact-map__text"
+                    >123 Hardware Lane, Fitzroy</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-wrapper reveal">
+              <h2 class="contact-form__title">Send an Enquiry</h2>
+              <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                  <label for="contactName">Name</label>
+                  <input
+                    type="text"
+                    id="contactName"
+                    placeholder="Your name"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">Email</label>
+                  <input
+                    type="email"
+                    id="contactEmail"
+                    placeholder="your@email.com"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="contactSubject">Subject</label>
+                  <select id="contactSubject" class="form-input" required>
+                    <option value="">Select a subject...</option>
+                    <option value="general">General Enquiry</option>
+                    <option value="reservation">Reservation</option>
+                    <option value="catering">Catering</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="careers">Careers</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contactMessage">Message</label>
+                  <textarea
+                    id="contactMessage"
+                    rows="5"
+                    placeholder="Tell us what's on your mind..."
+                    class="form-input"
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn--primary btn--full">
+                  Send Message
+                </button>
+              </form>
+              <div class="contact-toast" id="contactToast">
+                <div class="order-toast__content">
+                  <span class="order-toast__icon">&#10003;</span>
+                  <span class="order-toast__text"
+                    >Message sent! We'll get back to you soon.</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <span class="footer__logo">&lt;/&gt; The Daily Standup</span>
+            <p class="footer__tagline">Where Code Meets Cuisine</p>
+          </div>
+          <div class="footer__links">
+            <a href="#/home">Home</a>
+            <a href="#/menu">Menu</a>
+            <a href="#/order">Order</a>
+            <a href="#/history">Our Story</a>
+            <a href="#/contact">Contact</a>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"
+              >IG</a
+            >
+            <a href="#" class="footer__social-link" aria-label="Facebook">FB</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">X</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            &copy; 2026 The Daily Standup. All rights reserved. No bugs in our
+            food.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/order.js"></script>
+    <script>
+      const menuItemOfTheDayElement =
+        document.getElementById("menuItemOfTheDay");
+      const menuItems = fetch("data/menu.json")
+        .then(function (res) {
+          return res.json();
+        })
+        .then(function (data) {
+          menuData = data;
+          const random = Math.floor(Math.random() * menuData.items.length);
+          const menuItemOfTheDay = menuData.items[random];
+          menuItemOfTheDayElement.textContent = `${menuItemOfTheDay.name} only ${menuItemOfTheDay.price}!`;
+        });
+    </script>
+  </body>
+</html>

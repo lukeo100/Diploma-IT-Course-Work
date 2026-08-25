@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe — Single Fetch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <h1>🍳 Recipe Viewer</h1>
+        <p>Fetching a single recipe from DummyJSON</p>
+    </header>
+
+    <main class="container">
+        <article class="recipe-card">
+            <img id="recipeImage" src="" alt="Recipe image will appear here">
+            <div class="recipe-body">
+                <h2 id="recipeName">Loading recipe...</h2>
+                <div class="meta">
+                    <span id="recipeCuisine"></span>
+                    <span id="recipeDifficulty"></span>
+                    <span id="recipePrepTime"></span>
+                </div>
+                <p id="recipeRating" class="rating"></p>
+
+                <h3>Ingredients</h3>
+                <ul id="recipeIngredients">
+                    <li>Fetching ingredients...</li>
+                </ul>
+
+                <h3>Instructions</h3>
+                <ol id="recipeInstructions">
+                    <li>Fetching instructions...</li>
+                </ol>
+            </div>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

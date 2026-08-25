@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Notes</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>My Notes</h1>
+    <p>
+      <small>Each note saves its title, text, and the date it was added.</small>
+    </p>
+
+    <input id="titleInput" type="text" placeholder="Note title" />
+    <textarea id="noteInput" placeholder="Write your note..."></textarea>
+    <button id="addBtn">Add Note</button>
+    <button id="clearBtn" onclick="clearAllNotes()">Clear All Notes</button>
+    <input id="searchInput" type="text" placeholder="Search notes..." />
+
+    <ul id="noteList"></ul>
+
+    <!-- This is the important line: it links our JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

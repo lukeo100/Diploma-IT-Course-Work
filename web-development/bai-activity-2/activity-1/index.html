@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Input</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <div class="card-image">
+            <div class="overlay">
+                <h2>Welcome</h2>
+                <p>Type something below</p>
+            </div>
+        </div>
+        
+        <div class="card-form">
+            <h1>Display Input</h1>
+            <form id="form">
+                <div class="form-group">
+                    <label for="userInput">Enter some text</label>
+                    <input type="text" id="userInput" placeholder="Type here...">
+                </div>
+                <button type="submit">Display</button>
+            </form>
+            <div class="output">
+                <p>Your text: <span id="output"></span></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

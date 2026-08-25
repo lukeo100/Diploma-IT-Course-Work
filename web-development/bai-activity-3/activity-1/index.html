@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Luca's To-Do List</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Luca's To-Do List</h1>
+    <p><small>Add tasks to practice using a JavaScript array.</small></p>
+
+    <input id="taskInput" type="text" placeholder="Enter a task..." />
+    <button id="addBtn">Add</button>
+
+    <p id="count">0 tasks</p>
+    <button id="remove-last">Remove Last Task</button>
+    <p>
+      First task: <span id="firstTask"></span><br />Last Task:
+      <span id="lastTask"></span>
+    </p>
+
+    <ul id="taskList"></ul>
+
+    <!-- This is the important line: it links our JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

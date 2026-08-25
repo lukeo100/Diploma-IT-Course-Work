@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Tails - Mobile Dog Grooming &amp; Washing</title>
+  <meta name="description" content="Happy Tails provides professional mobile dog grooming and washing services. We come to you! Serving within a 15km radius." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#fdf8f0',
+              100: '#f9eddb',
+              200: '#f3d7b1',
+              300: '#ecbc7f',
+              400: '#e49a4a',
+              500: '#dd8126',
+              600: '#cf691c',
+              700: '#ac5018',
+              800: '#8a401b',
+              900: '#703618',
+            }
+          },
+          fontFamily: {
+            display: ['Georgia', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://unpkg.com/@remix-run/router@1/dist/router.umd.min.js"></script>
+  <script src="https://unpkg.com/react-router@6/dist/umd/react-router.production.min.js"></script>
+  <script src="https://unpkg.com/react-router-dom@6/dist/umd/react-router-dom.production.min.js"></script>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <div id="root"></div>
+
+  <script type="text/babel">
+    const { useState, useEffect, createContext, useContext } = React;
+    const { HashRouter, Routes, Route, Link, useLocation } = ReactRouterDOM;
+
+    /* ===== ThemeContext ===== */
+    const ThemeContext = createContext();
+
+    function ThemeProvider({ children }) {
+      const [theme, setTheme] = useState(function() {
+        var stored = localStorage.getItem('theme');
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      });
+
+      useEffect(function() {
+        var root = document.documentElement;
+        if (theme === 'dark') { root.classList.add('dark'); }
+        else { root.classList.remove('dark'); }
+        localStorage.setItem('theme', theme);
+      }, [theme]);
+
+      useEffect(function() {
+        var mq = window.matchMedia('(prefers-color-scheme: dark)');
+        function handler(e) {
+          if (!localStorage.getItem('theme')) {
+            setTheme(e.matches ? 'dark' : 'light');
+          }
+        }
+        mq.addEventListener('change', handler);
+        return function() { mq.removeEventListener('change', handler); };
+      }, []);
+
+      var toggleTheme = function() { setTheme(function(p) { return p === 'dark' ? 'light' : 'dark'; }); };
+
+      return (
+        <ThemeContext.Provider value={{ theme: theme, toggleTheme: toggleTheme }}>
+          {children}
+        </ThemeContext.Provider>
+      );
+    }
+
+    function useTheme() { return useContext(ThemeContext); }
+
+    /* ===== Navbar ===== */
+    function Navbar() {
+      var themeCtx = useTheme();
+      var [menuOpen, setMenuOpen] = useState(false);
+      var location = useLocation();
+
+      var navLinks = [
+        { to: '/', label: 'Home' },
+        { to: '/about', label: 'About' },
+        { to: '/contact', label: 'Contact' },
+      ];
+
+      function isActive(path) { return location.pathname === path; }
+
+      var SunIcon = (
+        <svg className="w-5 h-5 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      );
+      var MoonIcon = (
+        <svg className="w-5 h-5 text-gray-700" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+          <path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+        </svg>
+      );
+
+      return (
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <Link to="/" className="flex items-center gap-2">
+                <span className="text-2xl">&#128062;</span>
+                <span className="text-xl font-bold text-brand-600 dark:text-brand-400 font-display">Happy Tails</span>
+              </Link>
+
+              <div className="hidden md:flex items-center gap-6">
+                {navLinks.map(function(nl) {
+                  return (
+                    <Link key={nl.to} to={nl.to}
+                      className={"text-sm font-medium transition-colors duration-200 " + (isActive(nl.to)
+                        ? "text-brand-600 dark:text-brand-400 border-b-2 border-brand-600 dark:border-brand-400 pb-1"
+                        : "text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400")}>
+                      {nl.label}
+                    </Link>
+                  );
+                })}
+                <button onClick={themeCtx.toggleTheme}
+                  className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                  aria-label="Toggle theme">
+                  {themeCtx.theme === 'dark' ? SunIcon : MoonIcon}
+                </button>
+                <Link to="/contact"
+                  className="px-4 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-full text-sm font-semibold transition-colors duration-200 shadow hover:shadow-lg">
+                  Contact Now
+                </Link>
+              </div>
+
+              <div className="flex items-center gap-3 md:hidden">
+                <button onClick={themeCtx.toggleTheme}
+                  className="p-2 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors duration-200"
+                  aria-label="Toggle theme">
+                  {themeCtx.theme === 'dark' ? SunIcon : MoonIcon}
+                </button>
+                <button onClick={function() { setMenuOpen(!menuOpen); }}
+                  className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
+                  aria-label="Toggle menu">
+                  {menuOpen ? (
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                  ) : (
+                    <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            </div>
+
+            {menuOpen && (
+              <div className="md:hidden pb-4 border-t border-gray-200 dark:border-gray-700">
+                {navLinks.map(function(nl) {
+                  return (
+                    <Link key={nl.to} to={nl.to} onClick={function() { setMenuOpen(false); }}
+                      className={"block py-2 px-4 text-sm font-medium transition-colors duration-200 " + (isActive(nl.to)
+                        ? "text-brand-600 dark:text-brand-400"
+                        : "text-gray-700 dark:text-gray-300 hover:text-brand-600 dark:hover:text-brand-400")}>
+                      {nl.label}
+                    </Link>
+                  );
+                })}
+                <Link to="/contact" onClick={function() { setMenuOpen(false); }}
+                  className="block mx-4 mt-2 px-4 py-2 bg-brand-500 hover:bg-brand-600 text-white rounded-full text-sm font-semibold text-center transition-colors duration-200">
+                  Contact Now
+                </Link>
+              </div>
+            )}
+          </div>
+        </nav>
+      );
+    }
+
+    /* ===== Footer ===== */
+    function Footer() {
+      return (
+        <footer className="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 transition-colors duration-300">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <div>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="text-2xl">&#128062;</span>
+                  <span className="text-xl font-bold text-brand-600 dark:text-brand-400 font-display">Happy Tails</span>
+                </div>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Professional mobile dog grooming and washing. We come to you!
+                </p>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider mb-3">Quick Links</h3>
+                <ul className="space-y-2">
+                  <li><Link to="/" className="text-sm text-gray-600 dark:text-gray-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors duration-200">Home</Link></li>
+                  <li><Link to="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors duration-200">About Us</Link></li>
+                  <li><Link to="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-brand-600 dark:hover:text-brand-400 transition-colors duration-200">Contact</Link></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider mb-3">Get in Touch</h3>
+                <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400">
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                    hello@happytails.com
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <svg className="w-4 h-4 text-brand-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                    (03) 1234 5678
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-4 h-4 text-brand-500 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span>123 Groomer Lane<br/>Petville, VIC 3000</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="mt-8 pt-6 border-t border-gray-200 dark:border-gray-700 text-center">
+              <p className="text-sm text-gray-500 dark:text-gray-400">&copy; {new Date().getFullYear()} Happy Tails Mobile Dog Grooming. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      );
+    }
+
+    /* ===== HeroSection ===== */
+    function HeroSection() {
+      return (
+        <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+          <div className="absolute inset-0">
+            <img src="https://www.ctoc.com.au/wp-content/uploads/2025/07/XB163098-1-Large-1024x682.jpeg" alt="Happy dog being groomed" className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+          </div>
+          <div className="relative z-10 text-center px-6 sm:px-10 max-w-3xl mx-auto pt-16 pb-10 rounded-[2rem] bg-white/10 backdrop-blur-xl border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.3),inset_0_1px_0_rgba(255,255,255,0.2)]">
+            <span className="inline-block text-5xl mb-4 animate-bounce">&#128062;</span>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white font-display mb-4 drop-shadow-lg">Happy Tails</h1>
+            <p className="text-lg sm:text-xl text-gray-200 mb-2 drop-shadow">Mobile Dog Grooming &amp; Washing</p>
+            <p className="text-base sm:text-lg text-gray-300 mb-8 drop-shadow max-w-xl mx-auto">
+              Professional grooming that comes to your door. We serve families within a 15km radius with love, care, and squeaky-clean results.
+            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Link to="/contact" className="px-8 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-base">Contact Now</Link>
+              <Link to="/about" className="px-8 py-3 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold rounded-full border border-white/30 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200 text-base">Learn More</Link>
+            </div>
+          </div>
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+            <svg className="w-6 h-6 text-white/60" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+            </svg>
+          </div>
+        </section>
+      );
+    }
+
+    /* ===== Home Page ===== */
+    var services = [
+      { icon: '\uD83E\uDDFD', title: 'Full Wash & Dry', desc: 'Premium shampoo, deep clean, and a fluffy blow dry that even the fussiest pups love.' },
+      { icon: '\u2702\uFE0F', title: 'Haircut & Styling', desc: 'Breed-specific cuts and trims by experienced groomers who know their way around every coat type.' },
+      { icon: '\uD83D\uDC85', title: 'Nail Trimming', desc: 'Gentle and precise nail clipping to keep your dog comfortable and walking with ease.' },
+      { icon: '\uD83D\uDC42', title: 'Ear & Eye Cleaning', desc: 'Careful cleaning to prevent infection and keep your dog feeling fresh and happy.' },
+    ];
+
+    function Home() {
+      return (
+        <main>
+          <HeroSection />
+          <section className="py-20 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white mb-4">What We Offer</h2>
+                <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Everything your furry friend needs, delivered right to your doorstep by our friendly, professional team.</p>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {services.map(function(s) {
+                  return (
+                    <div key={s.title} className="bg-white dark:bg-gray-900 rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center">
+                      <span className="text-4xl block mb-4">{s.icon}</span>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{s.title}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{s.desc}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-20 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="bg-brand-500 rounded-3xl p-8 sm:p-12 text-white shadow-2xl">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                  <div>
+                    <h2 className="text-3xl sm:text-4xl font-bold font-display mb-4">We Come to You!</h2>
+                    <p className="text-brand-100 text-base mb-6 leading-relaxed">No more stressful car rides or waiting in cages at a grooming salon. Our fully equipped van arrives at your home, making grooming a relaxed and positive experience for your dog.</p>
+                    <p className="text-brand-100 text-base mb-8 leading-relaxed">Proudly serving families within a <strong className="text-white">15km radius</strong> of our base in Petville, VIC.</p>
+                    <Link to="/about" className="inline-block px-6 py-3 bg-white text-brand-600 font-semibold rounded-full hover:bg-brand-50 transition-colors duration-200">Learn More About Us</Link>
+                  </div>
+                  <div className="grid grid-cols-2 gap-4">
+                    {[{ value: '15km', label: 'Service Radius' }, { value: '5+', label: 'Years Experience' }, { value: '100%', label: 'Happy Dogs' }, { value: '24/7', label: 'Online Booking' }].map(function(item) {
+                      return (
+                        <div key={item.label} className="bg-white/10 backdrop-blur-sm rounded-xl p-4 text-center">
+                          <div className="text-2xl sm:text-3xl font-bold mb-1">{item.value}</div>
+                          <div className="text-sm text-brand-100">{item.label}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+            <div className="max-w-3xl mx-auto text-center px-4">
+              <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white mb-4">Ready to Book?</h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-8">Get in touch today and give your pup the spa day they deserve.</p>
+              <Link to="/contact" className="inline-block px-8 py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200">Contact Us</Link>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ===== About Page ===== */
+    var aboutValues = [
+      { icon: '\uD83D\uDE90', title: 'We Come to You', desc: 'Our fully equipped mobile grooming van arrives at your doorstep. No stressful car rides or waiting in cages \u2014 just convenient, one-on-one attention for your pup.' },
+      { icon: '\uD83D\uDC68\u200D\uD83D\uDC69\u200D\uD83D\uDC67\u200D\uD83D\uDC66', title: 'Family Business', desc: "Happy Tails is a proudly family-run business. We treat every dog like our own because to us, they\u2019re not just clients \u2014 they\u2019re family." },
+      { icon: '\u2764\uFE0F', title: 'Passion & Care', desc: 'We genuinely love animals and it shows in everything we do. From the first paw shake to the final bow, your dog is in kind hands.' },
+      { icon: '\uD83C\uDFC6', title: 'Professional Results', desc: 'With years of experience and professional-grade equipment, we deliver salon-quality grooming right in your driveway.' },
+    ];
+
+    function About() {
+      return (
+        <main className="pt-16">
+          <section className="relative bg-brand-600 py-16 sm:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <span className="text-5xl mb-4 block">&#128062;</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-white font-display mb-4">About Happy Tails</h1>
+              <p className="text-brand-100 text-lg max-w-2xl mx-auto">A family-run mobile dog grooming service built on love for animals and a passion for making tails wag.</p>
+            </div>
+          </section>
+
+          <section className="py-16 sm:py-20 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                  <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white mb-6">Our Story</h2>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">Happy Tails started with a simple idea: dog grooming should be a stress-free, enjoyable experience for both pets and their owners. As a family of animal lovers, we saw how anxious dogs became during trips to the grooming salon, and we knew there had to be a better way.</p>
+                  <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">So we took the salon on the road. Our custom-built grooming van is equipped with everything we need to provide top-quality washes, haircuts, nail trims, and more \u2014 all from the comfort of your own driveway.</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Today, we&#x2019;re proud to serve dozens of happy families within a 15km radius. Every dog that hops into our van gets individual attention, gentle handling, and plenty of treats. Because at Happy Tails, we believe every dog deserves to feel like family.</p>
+                </div>
+                <div className="bg-brand-50 dark:bg-gray-800 rounded-3xl p-8 shadow-lg">
+                  <div className="grid grid-cols-2 gap-6">
+                    {[{ emoji: '\uD83D\uDC15', label: 'Dogs Groomed', value: '500+' }, { emoji: '\u2B50', label: '5-Star Reviews', value: '120+' }, { emoji: '\uD83D\uDE90', label: 'Mobile Sessions', value: '1000+' }, { emoji: '\uD83D\uDE0A', label: 'Happy Clients', value: '200+' }].map(function(item) {
+                      return (
+                        <div key={item.label} className="text-center p-4 bg-white dark:bg-gray-900 rounded-xl shadow-sm">
+                          <span className="text-3xl block mb-2">{item.emoji}</span>
+                          <div className="text-2xl font-bold text-brand-600 dark:text-brand-400">{item.value}</div>
+                          <div className="text-sm text-gray-500 dark:text-gray-400">{item.label}</div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 sm:py-20 bg-gray-50 dark:bg-gray-800/50 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white mb-4">How It Works</h2>
+                <p className="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">Getting your dog groomed has never been easier. Here&#x2019;s how the magic happens:</p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {[
+                  { step: '01', title: 'Book Online', desc: 'Fill out our contact form or give us a call. Tell us about your dog and pick a date and time that suits you.' },
+                  { step: '02', title: 'We Come to You', desc: 'Our mobile grooming van arrives at your home on schedule. Everything we need is right there on board.' },
+                  { step: '03', title: 'Happy Pup!', desc: "Your dog gets a full grooming session in a calm, one-on-one environment. They\u2019ll leave looking and feeling fantastic!" },
+                ].map(function(item) {
+                  return (
+                    <div key={item.step} className="relative bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-md hover:shadow-xl transition-all duration-300">
+                      <div className="text-5xl font-bold text-brand-200 dark:text-brand-800 mb-4">{item.step}</div>
+                      <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">{item.title}</h3>
+                      <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed">{item.desc}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 sm:py-20 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl sm:text-4xl font-bold font-display text-gray-900 dark:text-white mb-4">What We Stand For</h2>
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {aboutValues.map(function(v) {
+                  return (
+                    <div key={v.title} className="flex gap-4 items-start bg-gray-50 dark:bg-gray-800/50 rounded-2xl p-6">
+                      <span className="text-3xl flex-shrink-0">{v.icon}</span>
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-1">{v.title}</h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{v.desc}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </section>
+
+          <section className="py-16 bg-brand-600 text-white">
+            <div className="max-w-3xl mx-auto text-center px-4">
+              <h2 className="text-3xl sm:text-4xl font-bold font-display mb-4">Let&#x2019;s Make Your Dog&#x2019;s Day</h2>
+              <p className="text-brand-100 mb-8">Book a mobile grooming session and see the Happy Tails difference for yourself.</p>
+              <Link to="/contact" className="inline-block px-8 py-3 bg-white text-brand-600 font-semibold rounded-full hover:bg-brand-50 transition-colors duration-200 shadow-lg">Get in Touch</Link>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ===== Contact Page ===== */
+    function Contact() {
+      var bookingState = useState({ name: '', email: '', phone: '', dogName: '', breed: '', service: 'wash', date: '', message: '' });
+      var bookingForm = bookingState[0];
+      var setBookingForm = bookingState[1];
+      var enquiryState = useState({ name: '', email: '', subject: '', message: '' });
+      var enquiryForm = enquiryState[0];
+      var setEnquiryForm = enquiryState[1];
+      var bookingSubmittedState = useState(false);
+      var bookingSubmitted = bookingSubmittedState[0];
+      var setBookingSubmitted = bookingSubmittedState[1];
+      var enquirySubmittedState = useState(false);
+      var enquirySubmitted = enquirySubmittedState[0];
+      var setEnquirySubmitted = enquirySubmittedState[1];
+
+      function handleBookingChange(e) {
+        var updated = {};
+        for (var k in bookingForm) { updated[k] = bookingForm[k]; }
+        updated[e.target.name] = e.target.value;
+        setBookingForm(updated);
+      }
+      function handleEnquiryChange(e) {
+        var updated = {};
+        for (var k in enquiryForm) { updated[k] = enquiryForm[k]; }
+        updated[e.target.name] = e.target.value;
+        setEnquiryForm(updated);
+      }
+      function handleBookingSubmit(e) {
+        e.preventDefault();
+        setBookingSubmitted(true);
+        setTimeout(function() { setBookingSubmitted(false); }, 4000);
+        setBookingForm({ name: '', email: '', phone: '', dogName: '', breed: '', service: 'wash', date: '', message: '' });
+      }
+      function handleEnquirySubmit(e) {
+        e.preventDefault();
+        setEnquirySubmitted(true);
+        setTimeout(function() { setEnquirySubmitted(false); }, 4000);
+        setEnquiryForm({ name: '', email: '', subject: '', message: '' });
+      }
+
+      var inputClass = 'w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-brand-500 focus:border-transparent transition-all duration-200 text-sm';
+
+      var contactCards = [
+        { icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>), label: 'Location', value: '123 Groomer Lane, Petville, VIC 3000' },
+        { icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>), label: 'Email', value: 'hello@happytails.com' },
+        { icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>), label: 'Phone', value: '(03) 1234 5678' },
+        { icon: (<svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>), label: 'Service Area', value: 'Within 15km of Petville, VIC' },
+      ];
+
+      var hours = [
+        { day: 'Monday', hours: '8:00 AM - 6:00 PM', open: true },
+        { day: 'Tuesday', hours: '8:00 AM - 6:00 PM', open: true },
+        { day: 'Wednesday', hours: '8:00 AM - 6:00 PM', open: true },
+        { day: 'Thursday', hours: '8:00 AM - 6:00 PM', open: true },
+        { day: 'Friday', hours: '8:00 AM - 5:00 PM', open: true },
+        { day: 'Saturday', hours: '9:00 AM - 4:00 PM', open: true },
+        { day: 'Sunday', hours: 'Closed', open: false },
+      ];
+
+      return (
+        <main className="pt-16">
+          <section className="relative bg-brand-600 py-16 sm:py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+              <span className="text-5xl mb-4 block">&#128222;</span>
+              <h1 className="text-4xl sm:text-5xl font-bold text-white font-display mb-4">Contact Us</h1>
+              <p className="text-brand-100 text-lg max-w-2xl mx-auto">Ready to book a grooming session or have a question? We&#x2019;d love to hear from you!</p>
+            </div>
+          </section>
+
+          <section className="py-16 sm:py-20 transition-colors duration-300">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+                {contactCards.map(function(card) {
+                  return (
+                    <div key={card.label} className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-md text-center hover:shadow-lg transition-all duration-300">
+                      <div className="w-12 h-12 bg-brand-100 dark:bg-brand-900/30 rounded-full flex items-center justify-center mx-auto mb-3 text-brand-600 dark:text-brand-400">{card.icon}</div>
+                      <h3 className="text-sm font-semibold text-gray-900 dark:text-white mb-1">{card.label}</h3>
+                      <p className="text-sm text-gray-600 dark:text-gray-400">{card.value}</p>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md">
+                    <h2 className="text-2xl font-bold font-display text-gray-900 dark:text-white mb-2">Request a Grooming Session</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Fill out the form below and we&#x2019;ll get back to you within 24 hours to confirm your booking.</p>
+                    {bookingSubmitted && (
+                      <div className="mb-4 p-4 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-300 rounded-xl text-sm">
+                        Thank you! Your grooming request has been submitted. We&#x2019;ll be in touch shortly.
+                      </div>
+                    )}
+                    <form onSubmit={handleBookingSubmit} className="space-y-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input name="name" value={bookingForm.name} onChange={handleBookingChange} className={inputClass} placeholder="Your Name *" required />
+                        <input name="email" type="email" value={bookingForm.email} onChange={handleBookingChange} className={inputClass} placeholder="Email Address *" required />
+                      </div>
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input name="phone" type="tel" value={bookingForm.phone} onChange={handleBookingChange} className={inputClass} placeholder="Phone Number *" required />
+                        <input name="dogName" value={bookingForm.dogName} onChange={handleBookingChange} className={inputClass} placeholder="Dog's Name *" required />
+                      </div>
+                      <input name="breed" value={bookingForm.breed} onChange={handleBookingChange} className={inputClass} placeholder="Dog Breed" />
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <select name="service" value={bookingForm.service} onChange={handleBookingChange} className={inputClass}>
+                          <option value="wash">Full Wash &amp; Dry</option>
+                          <option value="haircut">Haircut &amp; Styling</option>
+                          <option value="nails">Nail Trimming</option>
+                          <option value="full">Full Grooming Package</option>
+                        </select>
+                        <input name="date" type="date" value={bookingForm.date} onChange={handleBookingChange} className={inputClass} required />
+                      </div>
+                      <textarea name="message" value={bookingForm.message} onChange={handleBookingChange} className={inputClass} rows="3" placeholder="Additional notes (e.g. allergies, special requests)" />
+                      <button type="submit" className="w-full py-3 bg-brand-500 hover:bg-brand-600 text-white font-semibold rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg">Request Booking</button>
+                    </form>
+                  </div>
+                </div>
+
+                <div className="space-y-8">
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md">
+                    <h2 className="text-2xl font-bold font-display text-gray-900 dark:text-white mb-2">General Enquiry</h2>
+                    <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">Have a question? Drop us a message and we&#x2019;ll get back to you.</p>
+                    {enquirySubmitted && (
+                      <div className="mb-4 p-4 bg-green-100 dark:bg-green-900/30 border border-green-400 dark:border-green-600 text-green-700 dark:text-green-300 rounded-xl text-sm">
+                        Thank you! Your enquiry has been sent. We&#x2019;ll respond as soon as possible.
+                      </div>
+                    )}
+                    <form onSubmit={handleEnquirySubmit} className="space-y-4">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <input name="name" value={enquiryForm.name} onChange={handleEnquiryChange} className={inputClass} placeholder="Your Name *" required />
+                        <input name="email" type="email" value={enquiryForm.email} onChange={handleEnquiryChange} className={inputClass} placeholder="Email Address *" required />
+                      </div>
+                      <input name="subject" value={enquiryForm.subject} onChange={handleEnquiryChange} className={inputClass} placeholder="Subject" />
+                      <textarea name="message" value={enquiryForm.message} onChange={handleEnquiryChange} className={inputClass} rows="4" placeholder="Your Message *" required />
+                      <button type="submit" className="w-full py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 font-semibold rounded-xl transition-colors duration-200 shadow-md hover:shadow-lg">Send Enquiry</button>
+                    </form>
+                  </div>
+
+                  <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-md">
+                    <h2 className="text-2xl font-bold font-display text-gray-900 dark:text-white mb-4">Business Hours</h2>
+                    <div className="space-y-3">
+                      {hours.map(function(h) {
+                        return (
+                          <div key={h.day} className="flex items-center justify-between py-2 border-b border-gray-100 dark:border-gray-700 last:border-0">
+                            <span className="text-sm font-medium text-gray-900 dark:text-white">{h.day}</span>
+                            <div className="flex items-center gap-2">
+                              <span className={"w-2 h-2 rounded-full " + (h.open ? 'bg-green-500' : 'bg-red-500')} />
+                              <span className={"text-sm " + (h.open ? 'text-gray-600 dark:text-gray-400' : 'text-red-500 font-medium')}>{h.hours}</span>
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-16">
+                <div className="bg-gray-200 dark:bg-gray-700 rounded-2xl overflow-hidden shadow-md">
+                  <div className="h-80 flex items-center justify-center">
+                    <div className="text-center">
+                      <svg className="w-12 h-12 mx-auto text-gray-400 dark:text-gray-500 mb-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                      <p className="text-gray-500 dark:text-gray-400 font-medium">Map &mdash; 123 Groomer Lane, Petville, VIC 3000</p>
+                      <p className="text-sm text-gray-400 dark:text-gray-500 mt-1">Embed a Google Map here for the live version</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      );
+    }
+
+    /* ===== App ===== */
+    function ScrollToTop() {
+      var loc = useLocation();
+      useEffect(function() { window.scrollTo(0, 0); }, [loc.pathname]);
+      return null;
+    }
+
+    function AppContent() {
+      return (
+        <div className="min-h-screen flex flex-col bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+          <Navbar />
+          <ScrollToTop />
+          <div className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <Footer />
+        </div>
+      );
+    }
+
+    function App() {
+      return (
+        <ThemeProvider>
+          <HashRouter>
+            <AppContent />
+          </HashRouter>
+        </ThemeProvider>
+      );
+    }
+
+    /* ===== Render ===== */
+    var root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

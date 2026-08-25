@@ -1,0 +1,162 @@
+/* ===========================
+   Animations CSS - Keyframes, Transitions, Scroll Effects
+   =========================== */
+
+/* --- Page Transitions --- */
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pageOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-12px);
+  }
+}
+
+/* --- Scroll Reveal --- */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered reveal for child elements */
+.reveal-stagger > .reveal:nth-child(1) { transition-delay: 0.05s; }
+.reveal-stagger > .reveal:nth-child(2) { transition-delay: 0.15s; }
+.reveal-stagger > .reveal:nth-child(3) { transition-delay: 0.25s; }
+.reveal-stagger > .reveal:nth-child(4) { transition-delay: 0.35s; }
+.reveal-stagger > .reveal:nth-child(5) { transition-delay: 0.45s; }
+
+/* --- Hero Animations --- */
+@keyframes heroFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero__content {
+  animation: heroFadeIn 0.8s ease 0.2s both;
+}
+
+.hero__title {
+  animation: heroFadeIn 0.7s ease 0.3s both;
+}
+
+.hero__tagline {
+  animation: heroFadeIn 0.7s ease 0.5s both;
+}
+
+.hero__sub {
+  animation: heroFadeIn 0.7s ease 0.65s both;
+}
+
+.hero__actions {
+  animation: heroFadeIn 0.7s ease 0.8s both;
+}
+
+/* --- Floating animation for decorative elements --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* --- Pulse animation for buttons --- */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 var(--accent-light); }
+  70% { box-shadow: 0 0 0 10px transparent; }
+  100% { box-shadow: 0 0 0 0 transparent; }
+}
+
+/* --- Theme toggle spin --- */
+@keyframes themeToggleSpin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.theme-toggle:active .theme-toggle__icon {
+  animation: themeToggleSpin 0.3s ease;
+}
+
+/* --- Card entrance --- */
+@keyframes cardIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.menu-card {
+  animation: cardIn 0.4s ease both;
+}
+
+.menu-card:nth-child(1) { animation-delay: 0.05s; }
+.menu-card:nth-child(2) { animation-delay: 0.1s; }
+.menu-card:nth-child(3) { animation-delay: 0.15s; }
+.menu-card:nth-child(4) { animation-delay: 0.2s; }
+.menu-card:nth-child(5) { animation-delay: 0.25s; }
+.menu-card:nth-child(6) { animation-delay: 0.3s; }
+.menu-card:nth-child(7) { animation-delay: 0.35s; }
+.menu-card:nth-child(8) { animation-delay: 0.4s; }
+
+/* --- Toast animation --- */
+@keyframes toastIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* --- Reduce motion --- */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero__content,
+  .hero__title,
+  .hero__tagline,
+  .hero__sub,
+  .hero__actions {
+    animation: none;
+    opacity: 1;
+  }
+}

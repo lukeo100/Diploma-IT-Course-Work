@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Activity 1 - Change Background Colour</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="pageBody">
+    <div class="container" id="saveStatus">
+      <p>Settings are being auto saved</p>
+      <button class="btn btn-danger" onclick="clearSettings()">
+        Clear Saved Settings
+      </button>
+    </div>
+    <div class="container">
+      <h1>Activity 1</h1>
+      <p>Click the button below to change the background colour!</p>
+
+      <div class="preset-colours">
+        <h2>Preset Colours</h2>
+        <button onclick="changeColour('#ff0000', '#000000')">Red</button>
+        <button onclick="changeColour('#00ff00', '#000000')">Green</button>
+        <button onclick="changeColour('#0000ff', '#000000')">Blue</button>
+        <button onclick="changeColour('#ffff00', '#000000')">Yellow</button>
+      </div>
+
+      <label for="colourPicker">Choose a colour:</label>
+      <input id="colour" type="color" />
+      <label for="textColour">Choose text colour:</label>
+      <input id="textColour" type="color" />
+      <button id="changeColourBtn" onclick="changeColour()">
+        Change Colour
+      </button>
+      <br />
+      <label for="randomColour">Or choose a random colour:</label>
+      <button id="randomColourBtn" onclick="randomColour()">
+        Random Colour
+      </button>
+      <label for="opacitySlider">Adjust Opacity:</label>
+      <input
+        id="opacitySlider"
+        type="range"
+        min="0.1"
+        max="1"
+        step="0.01"
+        value="1"
+        oninput="updateOpacity(this.value)"
+      />
+      <span
+        style="
+          display: flex;
+          align-items: stretch;
+          flex-direction: column;
+          gap: 0px;
+        "
+      >
+        <p id="colourResult"></p>
+        <button id="resetBtn" onclick="resetColour()">Reset Colour</button>
+      </span>
+
+      <div id="currentSettings">
+        <h2>Current Settings</h2>
+        <p id="currentBackground">Background Colour: #ffffff</p>
+        <p id="currentText">Text Colour: #000000</p>
+        <p id="currentOpacity">Opacity: 1</p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="activity.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: #fdf6ec;
+    color: #2d2d2d;
+    min-height: 100vh;
+}
+
+.site-header {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.site-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.site-header p {
+    opacity: 0.9;
+    font-size: 0.95rem;
+}
+
+.container {
+    max-width: 750px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.recipe-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+    display: block;
+    background: #eee;
+}
+
+.recipe-body {
+    padding: 2rem;
+}
+
+.recipe-body h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 0.6rem;
+}
+
+.meta {
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
+}
+
+.meta span {
+    background: #fff3e6;
+    color: #c05621;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+}
+
+.rating {
+    color: #e67e22;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 1.4rem;
+}
+
+.recipe-body h3 {
+    font-size: 1.15rem;
+    color: #1a1a2e;
+    margin: 1.4rem 0 0.6rem;
+    border-bottom: 2px solid #ff6b35;
+    display: inline-block;
+    padding-bottom: 0.2rem;
+}
+
+.recipe-body ul,
+.recipe-body ol {
+    padding-left: 1.4rem;
+    line-height: 1.7;
+    color: #4a5568;
+}
+
+.recipe-body li {
+    margin-bottom: 0.3rem;
+}

@@ -1,0 +1,146 @@
+{
+  "restaurant": {
+    "name": "The Daily Standup",
+    "tagline": "Where Code Meets Cuisine"
+  },
+  "categories": [
+    { "id": "mains", "name": "Mains", "icon": "\ud83c\udf54" },
+    { "id": "sides", "name": "Sides", "icon": "\ud83e\udd58" },
+    { "id": "drinks", "name": "Drinks", "icon": "\u2615" },
+    { "id": "desserts", "name": "Desserts", "icon": "\ud83c\udf70" }
+  ],
+  "items": [
+    {
+      "id": 1,
+      "name": "The Infinite Loop Lasagna",
+      "category": "mains",
+      "price": 18.9,
+      "description": "Layer upon layer upon layer... It never ends. Beef ragu, ricotta, and mozzarella baked until golden.",
+      "popular": true
+    },
+    {
+      "id": 2,
+      "name": "Stack Overflow Burger",
+      "category": "mains",
+      "price": 21.5,
+      "description": "Too much of a good thing. Double smash patties, American cheese, pickles, caramelised onions, and our secret sauce on a brioche bun.",
+      "popular": true
+    },
+    {
+      "id": 3,
+      "name": "Recursive Ribs",
+      "category": "mains",
+      "price": 26.0,
+      "description": "A function that calls itself until it falls off the bone. Slow-smoked pork ribs glazed in bourbon BBQ sauce.",
+      "popular": false
+    },
+    {
+      "id": 4,
+      "name": "Merge Conflict Mac & Cheese",
+      "category": "mains",
+      "price": 16.5,
+      "description": "Two competing flavours that somehow work together. Smoked gouda, cheddar, truffle oil, and crispy breadcrumb topping.",
+      "popular": false
+    },
+    {
+      "id": 5,
+      "name": "sudo salmon",
+      "category": "mains",
+      "price": 24.0,
+      "description": "You don't need permission to enjoy this. Pan-seared Atlantic salmon, lemon dill butter, roasted asparagus, and herbed rice.",
+      "popular": true
+    },
+    {
+      "id": 6,
+      "name": "Binary Onion Rings",
+      "category": "sides",
+      "price": 9.5,
+      "description": "On or off, 0 or 1. Thick-cut onion rings in a craft beer batter with chipotle aioli.",
+      "popular": false
+    },
+    {
+      "id": 7,
+      "name": "Git Chips & Guac",
+      "category": "sides",
+      "price": 11.0,
+      "description": "Commit to the dip. House-made tortilla chips with fresh smashed avocado, lime, and jalapeno.",
+      "popular": true
+    },
+    {
+      "id": 8,
+      "name": "The Try-Catch Tacos",
+      "category": "sides",
+      "price": 13.5,
+      "description": "Even if something goes wrong, we've got you covered. Three soft-shell tacos with choice of pulled pork, chicken, or grilled veggies.",
+      "popular": false
+    },
+    {
+      "id": 9,
+      "name": "The Sudo Smoothie",
+      "category": "drinks",
+      "price": 8.5,
+      "description": "It does what you tell it to. Mango, passionfruit, banana, and coconut milk blended to perfection.",
+      "popular": false
+    },
+    {
+      "id": 10,
+      "name": "Segfault Espresso",
+      "category": "drinks",
+      "price": 5.0,
+      "description": "A core dump of flavour. Double-shot espresso pulled from single-origin beans.",
+      "popular": true
+    },
+    {
+      "id": 11,
+      "name": "The Null Pointer",
+      "category": "drinks",
+      "price": 6.5,
+      "description": "Points to nothing but refreshment. Sparkling water with fresh mint, lime, and a hint of elderflower.",
+      "popular": false
+    },
+    {
+      "id": 12,
+      "name": "Hot Chocolate.js",
+      "category": "drinks",
+      "price": 7.0,
+      "description": "A warm, comforting runtime for your taste buds. Belgian chocolate, steamed milk, whipped cream, and marshmallows.",
+      "popular": false
+    },
+    {
+      "id": 13,
+      "name": "404 Sundae Not Found",
+      "category": "desserts",
+      "price": 14.0,
+      "description": "This page doesn't exist, but this sundae definitely does. Three scoops of gelato, hot fudge, caramel, whipped cream, and a cherry.",
+      "popular": true
+    },
+    {
+      "id": 14,
+      "name": "Hello World Cake",
+      "category": "desserts",
+      "price": "12.50",
+      "description": "Everyone starts somewhere. Moist red velvet layer cake with cream cheese frosting. Your first bite, your first love.",
+      "popular": false
+    },
+    {
+      "id": 15,
+      "name": "The Bit Shift Brownie",
+      "category": "desserts",
+      "price": 10.0,
+      "description": "A left shift of chocolate intensity. Dense fudge brownie with walnuts, served warm with vanilla bean ice cream.",
+      "popular": false
+    },
+    {
+      "id": 16,
+      "name": "The API Antipasto",
+      "category": "sides",
+      "price": 15.0,
+      "description": "An interface to Italian flavour. Cured meats, marinated olives, roasted peppers, aged parmesan, and focaccia.",
+      "popular": false
+    }
+  ],
+  "tables": {
+    "min": 1,
+    "max": 20
+  }
+}
