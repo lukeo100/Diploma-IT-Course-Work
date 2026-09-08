@@ -1,4 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Countries Explorer App
+
+This learning project uses Next.JS and Supabase. To recreate, simply run the SQL code in `schema.sql` within Supabase's SQL editor.
+
+Styled with Tailwind, here are some previews:
+
+## Screenshots
+
+![Countries Explorer home page](docs-resources/home.png)
+
+_Home page showing the available countries._
+
+![Country details page](docs-resources/country-view.png)
+
+_Country details page showing information about the United States._
+
+![Country not found page](docs-resources/error-example.png)
+
+_Error state shown when a country cannot be found._
 
 ## Getting Started
 
