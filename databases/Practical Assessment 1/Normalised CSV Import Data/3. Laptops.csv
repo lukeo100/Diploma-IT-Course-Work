@@ -1,0 +1,601 @@
+laptop_id,asset_tag,serial_number,brand,model,screen_size,processor,ram_gb,storage_gb,unit_value,distribution_status,distribution_centre_id
+L0001,KLA-LT-00001,KL26010000000001,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,in_stock,DC01
+L0002,KLA-LT-00002,KL26020000000002,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,distributed,DC02
+L0003,KLA-LT-00003,KL26030000000003,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0004,KLA-LT-00004,KL26040000000004,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC04
+L0005,KLA-LT-00005,KL26050000000005,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0006,KLA-LT-00006,KL26010000000006,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,in_stock,DC01
+L0007,KLA-LT-00007,KL26020000000007,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,in_stock,DC02
+L0008,KLA-LT-00008,KL26030000000008,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0009,KLA-LT-00009,KL26040000000009,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,distributed,DC04
+L0010,KLA-LT-00010,KL26050000000010,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC05
+L0011,KLA-LT-00011,KL26010000000011,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0012,KLA-LT-00012,KL26020000000012,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,in_stock,DC02
+L0013,KLA-LT-00013,KL26030000000013,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,in_stock,DC03
+L0014,KLA-LT-00014,KL26040000000014,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC04
+L0015,KLA-LT-00015,KL26050000000015,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC05
+L0016,KLA-LT-00016,KL26010000000016,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC01
+L0017,KLA-LT-00017,KL26020000000017,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC02
+L0018,KLA-LT-00018,KL26030000000018,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC03
+L0019,KLA-LT-00019,KL26040000000019,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,distributed,DC04
+L0020,KLA-LT-00020,KL26050000000020,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,in_stock,DC05
+L0021,KLA-LT-00021,KL26010000000021,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC01
+L0022,KLA-LT-00022,KL26020000000022,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC02
+L0023,KLA-LT-00023,KL26030000000023,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC03
+L0024,KLA-LT-00024,KL26040000000024,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,in_stock,DC04
+L0025,KLA-LT-00025,KL26050000000025,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC05
+L0026,KLA-LT-00026,KL26010000000026,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC01
+L0027,KLA-LT-00027,KL26020000000027,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC02
+L0028,KLA-LT-00028,KL26030000000028,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC03
+L0029,KLA-LT-00029,KL26040000000029,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC04
+L0030,KLA-LT-00030,KL26050000000030,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC05
+L0031,KLA-LT-00031,KL26010000000031,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC01
+L0032,KLA-LT-00032,KL26020000000032,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC02
+L0033,KLA-LT-00033,KL26030000000033,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC03
+L0034,KLA-LT-00034,KL26040000000034,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC04
+L0035,KLA-LT-00035,KL26050000000035,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,in_stock,DC05
+L0036,KLA-LT-00036,KL26010000000036,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC01
+L0037,KLA-LT-00037,KL26020000000037,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC02
+L0038,KLA-LT-00038,KL26030000000038,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC03
+L0039,KLA-LT-00039,KL26040000000039,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC04
+L0040,KLA-LT-00040,KL26050000000040,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,distributed,DC05
+L0041,KLA-LT-00041,KL26010000000041,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC01
+L0042,KLA-LT-00042,KL26020000000042,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC02
+L0043,KLA-LT-00043,KL26030000000043,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0044,KLA-LT-00044,KL26040000000044,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC04
+L0045,KLA-LT-00045,KL26050000000045,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0046,KLA-LT-00046,KL26010000000046,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC01
+L0047,KLA-LT-00047,KL26020000000047,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,in_stock,DC02
+L0048,KLA-LT-00048,KL26030000000048,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,in_stock,DC03
+L0049,KLA-LT-00049,KL26040000000049,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC04
+L0050,KLA-LT-00050,KL26050000000050,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC05
+L0051,KLA-LT-00051,KL26010000000051,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0052,KLA-LT-00052,KL26020000000052,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC02
+L0053,KLA-LT-00053,KL26030000000053,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,in_stock,DC03
+L0054,KLA-LT-00054,KL26040000000054,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC04
+L0055,KLA-LT-00055,KL26050000000055,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC05
+L0056,KLA-LT-00056,KL26010000000056,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,in_stock,DC01
+L0057,KLA-LT-00057,KL26020000000057,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC02
+L0058,KLA-LT-00058,KL26030000000058,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0059,KLA-LT-00059,KL26040000000059,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,distributed,DC04
+L0060,KLA-LT-00060,KL26050000000060,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC05
+L0061,KLA-LT-00061,KL26010000000061,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC01
+L0062,KLA-LT-00062,KL26020000000062,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC02
+L0063,KLA-LT-00063,KL26030000000063,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,distributed,DC03
+L0064,KLA-LT-00064,KL26040000000064,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,in_stock,DC04
+L0065,KLA-LT-00065,KL26050000000065,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC05
+L0066,KLA-LT-00066,KL26010000000066,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC01
+L0067,KLA-LT-00067,KL26020000000067,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,in_stock,DC02
+L0068,KLA-LT-00068,KL26030000000068,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC03
+L0069,KLA-LT-00069,KL26040000000069,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,in_stock,DC04
+L0070,KLA-LT-00070,KL26050000000070,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,in_stock,DC05
+L0071,KLA-LT-00071,KL26010000000071,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0072,KLA-LT-00072,KL26020000000072,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC02
+L0073,KLA-LT-00073,KL26030000000073,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC03
+L0074,KLA-LT-00074,KL26040000000074,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,in_stock,DC04
+L0075,KLA-LT-00075,KL26050000000075,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC05
+L0076,KLA-LT-00076,KL26010000000076,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC01
+L0077,KLA-LT-00077,KL26020000000077,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC02
+L0078,KLA-LT-00078,KL26030000000078,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0079,KLA-LT-00079,KL26040000000079,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC04
+L0080,KLA-LT-00080,KL26050000000080,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC05
+L0081,KLA-LT-00081,KL26010000000081,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC01
+L0082,KLA-LT-00082,KL26020000000082,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC02
+L0083,KLA-LT-00083,KL26030000000083,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0084,KLA-LT-00084,KL26040000000084,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC04
+L0085,KLA-LT-00085,KL26050000000085,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC05
+L0086,KLA-LT-00086,KL26010000000086,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC01
+L0087,KLA-LT-00087,KL26020000000087,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC02
+L0088,KLA-LT-00088,KL26030000000088,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0089,KLA-LT-00089,KL26040000000089,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0090,KLA-LT-00090,KL26050000000090,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC05
+L0091,KLA-LT-00091,KL26010000000091,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0092,KLA-LT-00092,KL26020000000092,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC02
+L0093,KLA-LT-00093,KL26030000000093,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC03
+L0094,KLA-LT-00094,KL26040000000094,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC04
+L0095,KLA-LT-00095,KL26050000000095,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,distributed,DC05
+L0096,KLA-LT-00096,KL26010000000096,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC01
+L0097,KLA-LT-00097,KL26020000000097,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC02
+L0098,KLA-LT-00098,KL26030000000098,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,distributed,DC03
+L0099,KLA-LT-00099,KL26040000000099,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,distributed,DC04
+L0100,KLA-LT-00100,KL26050000000100,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC05
+L0101,KLA-LT-00101,KL26010000000101,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC01
+L0102,KLA-LT-00102,KL26020000000102,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC02
+L0103,KLA-LT-00103,KL26030000000103,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0104,KLA-LT-00104,KL26040000000104,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC04
+L0105,KLA-LT-00105,KL26050000000105,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,distributed,DC05
+L0106,KLA-LT-00106,KL26010000000106,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC01
+L0107,KLA-LT-00107,KL26020000000107,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,in_stock,DC02
+L0108,KLA-LT-00108,KL26030000000108,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC03
+L0109,KLA-LT-00109,KL26040000000109,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC04
+L0110,KLA-LT-00110,KL26050000000110,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,in_stock,DC05
+L0111,KLA-LT-00111,KL26010000000111,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC01
+L0112,KLA-LT-00112,KL26020000000112,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC02
+L0113,KLA-LT-00113,KL26030000000113,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC03
+L0114,KLA-LT-00114,KL26040000000114,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC04
+L0115,KLA-LT-00115,KL26050000000115,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0116,KLA-LT-00116,KL26010000000116,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC01
+L0117,KLA-LT-00117,KL26020000000117,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC02
+L0118,KLA-LT-00118,KL26030000000118,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC03
+L0119,KLA-LT-00119,KL26040000000119,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC04
+L0120,KLA-LT-00120,KL26050000000120,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC05
+L0121,KLA-LT-00121,KL26010000000121,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC01
+L0122,KLA-LT-00122,KL26020000000122,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC02
+L0123,KLA-LT-00123,KL26030000000123,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC03
+L0124,KLA-LT-00124,KL26040000000124,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC04
+L0125,KLA-LT-00125,KL26050000000125,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC05
+L0126,KLA-LT-00126,KL26010000000126,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC01
+L0127,KLA-LT-00127,KL26020000000127,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC02
+L0128,KLA-LT-00128,KL26030000000128,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0129,KLA-LT-00129,KL26040000000129,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC04
+L0130,KLA-LT-00130,KL26050000000130,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC05
+L0131,KLA-LT-00131,KL26010000000131,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,in_stock,DC01
+L0132,KLA-LT-00132,KL26020000000132,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC02
+L0133,KLA-LT-00133,KL26030000000133,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC03
+L0134,KLA-LT-00134,KL26040000000134,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC04
+L0135,KLA-LT-00135,KL26050000000135,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC05
+L0136,KLA-LT-00136,KL26010000000136,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC01
+L0137,KLA-LT-00137,KL26020000000137,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0138,KLA-LT-00138,KL26030000000138,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0139,KLA-LT-00139,KL26040000000139,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC04
+L0140,KLA-LT-00140,KL26050000000140,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC05
+L0141,KLA-LT-00141,KL26010000000141,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC01
+L0142,KLA-LT-00142,KL26020000000142,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC02
+L0143,KLA-LT-00143,KL26030000000143,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,in_stock,DC03
+L0144,KLA-LT-00144,KL26040000000144,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC04
+L0145,KLA-LT-00145,KL26050000000145,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC05
+L0146,KLA-LT-00146,KL26010000000146,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC01
+L0147,KLA-LT-00147,KL26020000000147,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,in_stock,DC02
+L0148,KLA-LT-00148,KL26030000000148,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC03
+L0149,KLA-LT-00149,KL26040000000149,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC04
+L0150,KLA-LT-00150,KL26050000000150,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC05
+L0151,KLA-LT-00151,KL26010000000151,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0152,KLA-LT-00152,KL26020000000152,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC02
+L0153,KLA-LT-00153,KL26030000000153,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC03
+L0154,KLA-LT-00154,KL26040000000154,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC04
+L0155,KLA-LT-00155,KL26050000000155,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC05
+L0156,KLA-LT-00156,KL26010000000156,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC01
+L0157,KLA-LT-00157,KL26020000000157,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0158,KLA-LT-00158,KL26030000000158,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC03
+L0159,KLA-LT-00159,KL26040000000159,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC04
+L0160,KLA-LT-00160,KL26050000000160,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC05
+L0161,KLA-LT-00161,KL26010000000161,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC01
+L0162,KLA-LT-00162,KL26020000000162,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,in_stock,DC02
+L0163,KLA-LT-00163,KL26030000000163,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0164,KLA-LT-00164,KL26040000000164,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC04
+L0165,KLA-LT-00165,KL26050000000165,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0166,KLA-LT-00166,KL26010000000166,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC01
+L0167,KLA-LT-00167,KL26020000000167,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC02
+L0168,KLA-LT-00168,KL26030000000168,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,in_stock,DC03
+L0169,KLA-LT-00169,KL26040000000169,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC04
+L0170,KLA-LT-00170,KL26050000000170,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC05
+L0171,KLA-LT-00171,KL26010000000171,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC01
+L0172,KLA-LT-00172,KL26020000000172,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC02
+L0173,KLA-LT-00173,KL26030000000173,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC03
+L0174,KLA-LT-00174,KL26040000000174,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC04
+L0175,KLA-LT-00175,KL26050000000175,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC05
+L0176,KLA-LT-00176,KL26010000000176,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC01
+L0177,KLA-LT-00177,KL26020000000177,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC02
+L0178,KLA-LT-00178,KL26030000000178,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0179,KLA-LT-00179,KL26040000000179,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC04
+L0180,KLA-LT-00180,KL26050000000180,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC05
+L0181,KLA-LT-00181,KL26010000000181,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC01
+L0182,KLA-LT-00182,KL26020000000182,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0183,KLA-LT-00183,KL26030000000183,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0184,KLA-LT-00184,KL26040000000184,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,in_stock,DC04
+L0185,KLA-LT-00185,KL26050000000185,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC05
+L0186,KLA-LT-00186,KL26010000000186,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC01
+L0187,KLA-LT-00187,KL26020000000187,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,in_stock,DC02
+L0188,KLA-LT-00188,KL26030000000188,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC03
+L0189,KLA-LT-00189,KL26040000000189,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC04
+L0190,KLA-LT-00190,KL26050000000190,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC05
+L0191,KLA-LT-00191,KL26010000000191,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC01
+L0192,KLA-LT-00192,KL26020000000192,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC02
+L0193,KLA-LT-00193,KL26030000000193,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC03
+L0194,KLA-LT-00194,KL26040000000194,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC04
+L0195,KLA-LT-00195,KL26050000000195,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0196,KLA-LT-00196,KL26010000000196,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC01
+L0197,KLA-LT-00197,KL26020000000197,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC02
+L0198,KLA-LT-00198,KL26030000000198,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0199,KLA-LT-00199,KL26040000000199,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,in_stock,DC04
+L0200,KLA-LT-00200,KL26050000000200,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC05
+L0201,KLA-LT-00201,KL26010000000201,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC01
+L0202,KLA-LT-00202,KL26020000000202,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC02
+L0203,KLA-LT-00203,KL26030000000203,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0204,KLA-LT-00204,KL26040000000204,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC04
+L0205,KLA-LT-00205,KL26050000000205,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC05
+L0206,KLA-LT-00206,KL26010000000206,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC01
+L0207,KLA-LT-00207,KL26020000000207,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,distributed,DC02
+L0208,KLA-LT-00208,KL26030000000208,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC03
+L0209,KLA-LT-00209,KL26040000000209,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC04
+L0210,KLA-LT-00210,KL26050000000210,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC05
+L0211,KLA-LT-00211,KL26010000000211,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,in_stock,DC01
+L0212,KLA-LT-00212,KL26020000000212,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC02
+L0213,KLA-LT-00213,KL26030000000213,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC03
+L0214,KLA-LT-00214,KL26040000000214,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC04
+L0215,KLA-LT-00215,KL26050000000215,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC05
+L0216,KLA-LT-00216,KL26010000000216,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC01
+L0217,KLA-LT-00217,KL26020000000217,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC02
+L0218,KLA-LT-00218,KL26030000000218,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,in_stock,DC03
+L0219,KLA-LT-00219,KL26040000000219,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC04
+L0220,KLA-LT-00220,KL26050000000220,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC05
+L0221,KLA-LT-00221,KL26010000000221,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,in_stock,DC01
+L0222,KLA-LT-00222,KL26020000000222,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0223,KLA-LT-00223,KL26030000000223,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0224,KLA-LT-00224,KL26040000000224,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC04
+L0225,KLA-LT-00225,KL26050000000225,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC05
+L0226,KLA-LT-00226,KL26010000000226,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,in_stock,DC01
+L0227,KLA-LT-00227,KL26020000000227,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC02
+L0228,KLA-LT-00228,KL26030000000228,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC03
+L0229,KLA-LT-00229,KL26040000000229,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC04
+L0230,KLA-LT-00230,KL26050000000230,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,in_stock,DC05
+L0231,KLA-LT-00231,KL26010000000231,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0232,KLA-LT-00232,KL26020000000232,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC02
+L0233,KLA-LT-00233,KL26030000000233,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC03
+L0234,KLA-LT-00234,KL26040000000234,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC04
+L0235,KLA-LT-00235,KL26050000000235,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC05
+L0236,KLA-LT-00236,KL26010000000236,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC01
+L0237,KLA-LT-00237,KL26020000000237,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0238,KLA-LT-00238,KL26030000000238,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC03
+L0239,KLA-LT-00239,KL26040000000239,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,distributed,DC04
+L0240,KLA-LT-00240,KL26050000000240,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC05
+L0241,KLA-LT-00241,KL26010000000241,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC01
+L0242,KLA-LT-00242,KL26020000000242,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC02
+L0243,KLA-LT-00243,KL26030000000243,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC03
+L0244,KLA-LT-00244,KL26040000000244,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC04
+L0245,KLA-LT-00245,KL26050000000245,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0246,KLA-LT-00246,KL26010000000246,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,in_stock,DC01
+L0247,KLA-LT-00247,KL26020000000247,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC02
+L0248,KLA-LT-00248,KL26030000000248,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,in_stock,DC03
+L0249,KLA-LT-00249,KL26040000000249,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,distributed,DC04
+L0250,KLA-LT-00250,KL26050000000250,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,in_stock,DC05
+L0251,KLA-LT-00251,KL26010000000251,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,in_stock,DC01
+L0252,KLA-LT-00252,KL26020000000252,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,in_stock,DC02
+L0253,KLA-LT-00253,KL26030000000253,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC03
+L0254,KLA-LT-00254,KL26040000000254,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC04
+L0255,KLA-LT-00255,KL26050000000255,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,in_stock,DC05
+L0256,KLA-LT-00256,KL26010000000256,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC01
+L0257,KLA-LT-00257,KL26020000000257,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC02
+L0258,KLA-LT-00258,KL26030000000258,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC03
+L0259,KLA-LT-00259,KL26040000000259,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,in_stock,DC04
+L0260,KLA-LT-00260,KL26050000000260,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,in_stock,DC05
+L0261,KLA-LT-00261,KL26010000000261,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC01
+L0262,KLA-LT-00262,KL26020000000262,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0263,KLA-LT-00263,KL26030000000263,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC03
+L0264,KLA-LT-00264,KL26040000000264,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC04
+L0265,KLA-LT-00265,KL26050000000265,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC05
+L0266,KLA-LT-00266,KL26010000000266,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC01
+L0267,KLA-LT-00267,KL26020000000267,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC02
+L0268,KLA-LT-00268,KL26030000000268,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,in_stock,DC03
+L0269,KLA-LT-00269,KL26040000000269,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC04
+L0270,KLA-LT-00270,KL26050000000270,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC05
+L0271,KLA-LT-00271,KL26010000000271,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC01
+L0272,KLA-LT-00272,KL26020000000272,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC02
+L0273,KLA-LT-00273,KL26030000000273,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC03
+L0274,KLA-LT-00274,KL26040000000274,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC04
+L0275,KLA-LT-00275,KL26050000000275,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,in_stock,DC05
+L0276,KLA-LT-00276,KL26010000000276,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC01
+L0277,KLA-LT-00277,KL26020000000277,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC02
+L0278,KLA-LT-00278,KL26030000000278,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,in_stock,DC03
+L0279,KLA-LT-00279,KL26040000000279,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,in_stock,DC04
+L0280,KLA-LT-00280,KL26050000000280,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC05
+L0281,KLA-LT-00281,KL26010000000281,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC01
+L0282,KLA-LT-00282,KL26020000000282,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC02
+L0283,KLA-LT-00283,KL26030000000283,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,distributed,DC03
+L0284,KLA-LT-00284,KL26040000000284,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC04
+L0285,KLA-LT-00285,KL26050000000285,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0286,KLA-LT-00286,KL26010000000286,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC01
+L0287,KLA-LT-00287,KL26020000000287,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,in_stock,DC02
+L0288,KLA-LT-00288,KL26030000000288,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,in_stock,DC03
+L0289,KLA-LT-00289,KL26040000000289,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,in_stock,DC04
+L0290,KLA-LT-00290,KL26050000000290,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC05
+L0291,KLA-LT-00291,KL26010000000291,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0292,KLA-LT-00292,KL26020000000292,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC02
+L0293,KLA-LT-00293,KL26030000000293,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC03
+L0294,KLA-LT-00294,KL26040000000294,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC04
+L0295,KLA-LT-00295,KL26050000000295,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC05
+L0296,KLA-LT-00296,KL26010000000296,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,in_stock,DC01
+L0297,KLA-LT-00297,KL26020000000297,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0298,KLA-LT-00298,KL26030000000298,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0299,KLA-LT-00299,KL26040000000299,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,in_stock,DC04
+L0300,KLA-LT-00300,KL26050000000300,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC05
+L0301,KLA-LT-00301,KL26010000000301,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC01
+L0302,KLA-LT-00302,KL26020000000302,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC02
+L0303,KLA-LT-00303,KL26030000000303,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0304,KLA-LT-00304,KL26040000000304,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC04
+L0305,KLA-LT-00305,KL26050000000305,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC05
+L0306,KLA-LT-00306,KL26010000000306,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,in_stock,DC01
+L0307,KLA-LT-00307,KL26020000000307,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC02
+L0308,KLA-LT-00308,KL26030000000308,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC03
+L0309,KLA-LT-00309,KL26040000000309,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC04
+L0310,KLA-LT-00310,KL26050000000310,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC05
+L0311,KLA-LT-00311,KL26010000000311,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0312,KLA-LT-00312,KL26020000000312,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC02
+L0313,KLA-LT-00313,KL26030000000313,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC03
+L0314,KLA-LT-00314,KL26040000000314,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC04
+L0315,KLA-LT-00315,KL26050000000315,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,in_stock,DC05
+L0316,KLA-LT-00316,KL26010000000316,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC01
+L0317,KLA-LT-00317,KL26020000000317,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0318,KLA-LT-00318,KL26030000000318,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC03
+L0319,KLA-LT-00319,KL26040000000319,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC04
+L0320,KLA-LT-00320,KL26050000000320,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,in_stock,DC05
+L0321,KLA-LT-00321,KL26010000000321,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,in_stock,DC01
+L0322,KLA-LT-00322,KL26020000000322,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC02
+L0323,KLA-LT-00323,KL26030000000323,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC03
+L0324,KLA-LT-00324,KL26040000000324,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC04
+L0325,KLA-LT-00325,KL26050000000325,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC05
+L0326,KLA-LT-00326,KL26010000000326,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC01
+L0327,KLA-LT-00327,KL26020000000327,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC02
+L0328,KLA-LT-00328,KL26030000000328,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0329,KLA-LT-00329,KL26040000000329,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC04
+L0330,KLA-LT-00330,KL26050000000330,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC05
+L0331,KLA-LT-00331,KL26010000000331,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0332,KLA-LT-00332,KL26020000000332,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC02
+L0333,KLA-LT-00333,KL26030000000333,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC03
+L0334,KLA-LT-00334,KL26040000000334,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC04
+L0335,KLA-LT-00335,KL26050000000335,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC05
+L0336,KLA-LT-00336,KL26010000000336,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC01
+L0337,KLA-LT-00337,KL26020000000337,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0338,KLA-LT-00338,KL26030000000338,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC03
+L0339,KLA-LT-00339,KL26040000000339,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC04
+L0340,KLA-LT-00340,KL26050000000340,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC05
+L0341,KLA-LT-00341,KL26010000000341,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC01
+L0342,KLA-LT-00342,KL26020000000342,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0343,KLA-LT-00343,KL26030000000343,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0344,KLA-LT-00344,KL26040000000344,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,in_stock,DC04
+L0345,KLA-LT-00345,KL26050000000345,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,distributed,DC05
+L0346,KLA-LT-00346,KL26010000000346,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC01
+L0347,KLA-LT-00347,KL26020000000347,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC02
+L0348,KLA-LT-00348,KL26030000000348,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC03
+L0349,KLA-LT-00349,KL26040000000349,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC04
+L0350,KLA-LT-00350,KL26050000000350,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,in_stock,DC05
+L0351,KLA-LT-00351,KL26010000000351,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,in_stock,DC01
+L0352,KLA-LT-00352,KL26020000000352,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC02
+L0353,KLA-LT-00353,KL26030000000353,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,in_stock,DC03
+L0354,KLA-LT-00354,KL26040000000354,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC04
+L0355,KLA-LT-00355,KL26050000000355,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC05
+L0356,KLA-LT-00356,KL26010000000356,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC01
+L0357,KLA-LT-00357,KL26020000000357,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC02
+L0358,KLA-LT-00358,KL26030000000358,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC03
+L0359,KLA-LT-00359,KL26040000000359,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC04
+L0360,KLA-LT-00360,KL26050000000360,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC05
+L0361,KLA-LT-00361,KL26010000000361,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC01
+L0362,KLA-LT-00362,KL26020000000362,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC02
+L0363,KLA-LT-00363,KL26030000000363,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0364,KLA-LT-00364,KL26040000000364,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC04
+L0365,KLA-LT-00365,KL26050000000365,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,in_stock,DC05
+L0366,KLA-LT-00366,KL26010000000366,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,in_stock,DC01
+L0367,KLA-LT-00367,KL26020000000367,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1280,distributed,DC02
+L0368,KLA-LT-00368,KL26030000000368,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC03
+L0369,KLA-LT-00369,KL26040000000369,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC04
+L0370,KLA-LT-00370,KL26050000000370,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,in_stock,DC05
+L0371,KLA-LT-00371,KL26010000000371,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0372,KLA-LT-00372,KL26020000000372,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC02
+L0373,KLA-LT-00373,KL26030000000373,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC03
+L0374,KLA-LT-00374,KL26040000000374,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,in_stock,DC04
+L0375,KLA-LT-00375,KL26050000000375,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC05
+L0376,KLA-LT-00376,KL26010000000376,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC01
+L0377,KLA-LT-00377,KL26020000000377,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0378,KLA-LT-00378,KL26030000000378,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC03
+L0379,KLA-LT-00379,KL26040000000379,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC04
+L0380,KLA-LT-00380,KL26050000000380,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC05
+L0381,KLA-LT-00381,KL26010000000381,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC01
+L0382,KLA-LT-00382,KL26020000000382,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC02
+L0383,KLA-LT-00383,KL26030000000383,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC03
+L0384,KLA-LT-00384,KL26040000000384,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC04
+L0385,KLA-LT-00385,KL26050000000385,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,in_stock,DC05
+L0386,KLA-LT-00386,KL26010000000386,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC01
+L0387,KLA-LT-00387,KL26020000000387,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC02
+L0388,KLA-LT-00388,KL26030000000388,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC03
+L0389,KLA-LT-00389,KL26040000000389,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC04
+L0390,KLA-LT-00390,KL26050000000390,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC05
+L0391,KLA-LT-00391,KL26010000000391,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC01
+L0392,KLA-LT-00392,KL26020000000392,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC02
+L0393,KLA-LT-00393,KL26030000000393,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC03
+L0394,KLA-LT-00394,KL26040000000394,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC04
+L0395,KLA-LT-00395,KL26050000000395,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC05
+L0396,KLA-LT-00396,KL26010000000396,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,distributed,DC01
+L0397,KLA-LT-00397,KL26020000000397,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0398,KLA-LT-00398,KL26030000000398,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC03
+L0399,KLA-LT-00399,KL26040000000399,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC04
+L0400,KLA-LT-00400,KL26050000000400,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC05
+L0401,KLA-LT-00401,KL26010000000401,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC01
+L0402,KLA-LT-00402,KL26020000000402,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC02
+L0403,KLA-LT-00403,KL26030000000403,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC03
+L0404,KLA-LT-00404,KL26040000000404,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC04
+L0405,KLA-LT-00405,KL26050000000405,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC05
+L0406,KLA-LT-00406,KL26010000000406,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC01
+L0407,KLA-LT-00407,KL26020000000407,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC02
+L0408,KLA-LT-00408,KL26030000000408,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0409,KLA-LT-00409,KL26040000000409,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0410,KLA-LT-00410,KL26050000000410,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC05
+L0411,KLA-LT-00411,KL26010000000411,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0412,KLA-LT-00412,KL26020000000412,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC02
+L0413,KLA-LT-00413,KL26030000000413,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,in_stock,DC03
+L0414,KLA-LT-00414,KL26040000000414,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,in_stock,DC04
+L0415,KLA-LT-00415,KL26050000000415,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC05
+L0416,KLA-LT-00416,KL26010000000416,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,in_stock,DC01
+L0417,KLA-LT-00417,KL26020000000417,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0418,KLA-LT-00418,KL26030000000418,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,in_stock,DC03
+L0419,KLA-LT-00419,KL26040000000419,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,in_stock,DC04
+L0420,KLA-LT-00420,KL26050000000420,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC05
+L0421,KLA-LT-00421,KL26010000000421,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC01
+L0422,KLA-LT-00422,KL26020000000422,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC02
+L0423,KLA-LT-00423,KL26030000000423,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC03
+L0424,KLA-LT-00424,KL26040000000424,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC04
+L0425,KLA-LT-00425,KL26050000000425,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,distributed,DC05
+L0426,KLA-LT-00426,KL26010000000426,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC01
+L0427,KLA-LT-00427,KL26020000000427,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC02
+L0428,KLA-LT-00428,KL26030000000428,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC03
+L0429,KLA-LT-00429,KL26040000000429,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC04
+L0430,KLA-LT-00430,KL26050000000430,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC05
+L0431,KLA-LT-00431,KL26010000000431,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0432,KLA-LT-00432,KL26020000000432,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC02
+L0433,KLA-LT-00433,KL26030000000433,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC03
+L0434,KLA-LT-00434,KL26040000000434,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,distributed,DC04
+L0435,KLA-LT-00435,KL26050000000435,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0436,KLA-LT-00436,KL26010000000436,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC01
+L0437,KLA-LT-00437,KL26020000000437,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0438,KLA-LT-00438,KL26030000000438,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0439,KLA-LT-00439,KL26040000000439,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC04
+L0440,KLA-LT-00440,KL26050000000440,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC05
+L0441,KLA-LT-00441,KL26010000000441,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC01
+L0442,KLA-LT-00442,KL26020000000442,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC02
+L0443,KLA-LT-00443,KL26030000000443,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0444,KLA-LT-00444,KL26040000000444,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC04
+L0445,KLA-LT-00445,KL26050000000445,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC05
+L0446,KLA-LT-00446,KL26010000000446,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC01
+L0447,KLA-LT-00447,KL26020000000447,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC02
+L0448,KLA-LT-00448,KL26030000000448,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,in_stock,DC03
+L0449,KLA-LT-00449,KL26040000000449,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0450,KLA-LT-00450,KL26050000000450,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,in_stock,DC05
+L0451,KLA-LT-00451,KL26010000000451,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0452,KLA-LT-00452,KL26020000000452,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1230,distributed,DC02
+L0453,KLA-LT-00453,KL26030000000453,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,in_stock,DC03
+L0454,KLA-LT-00454,KL26040000000454,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC04
+L0455,KLA-LT-00455,KL26050000000455,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC05
+L0456,KLA-LT-00456,KL26010000000456,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC01
+L0457,KLA-LT-00457,KL26020000000457,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0458,KLA-LT-00458,KL26030000000458,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC03
+L0459,KLA-LT-00459,KL26040000000459,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC04
+L0460,KLA-LT-00460,KL26050000000460,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC05
+L0461,KLA-LT-00461,KL26010000000461,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC01
+L0462,KLA-LT-00462,KL26020000000462,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0463,KLA-LT-00463,KL26030000000463,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC03
+L0464,KLA-LT-00464,KL26040000000464,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,distributed,DC04
+L0465,KLA-LT-00465,KL26050000000465,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC05
+L0466,KLA-LT-00466,KL26010000000466,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC01
+L0467,KLA-LT-00467,KL26020000000467,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC02
+L0468,KLA-LT-00468,KL26030000000468,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,in_stock,DC03
+L0469,KLA-LT-00469,KL26040000000469,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,in_stock,DC04
+L0470,KLA-LT-00470,KL26050000000470,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,in_stock,DC05
+L0471,KLA-LT-00471,KL26010000000471,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0472,KLA-LT-00472,KL26020000000472,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,distributed,DC02
+L0473,KLA-LT-00473,KL26030000000473,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,in_stock,DC03
+L0474,KLA-LT-00474,KL26040000000474,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC04
+L0475,KLA-LT-00475,KL26050000000475,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0476,KLA-LT-00476,KL26010000000476,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,distributed,DC01
+L0477,KLA-LT-00477,KL26020000000477,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC02
+L0478,KLA-LT-00478,KL26030000000478,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0479,KLA-LT-00479,KL26040000000479,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,in_stock,DC04
+L0480,KLA-LT-00480,KL26050000000480,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC05
+L0481,KLA-LT-00481,KL26010000000481,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,distributed,DC01
+L0482,KLA-LT-00482,KL26020000000482,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC02
+L0483,KLA-LT-00483,KL26030000000483,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC03
+L0484,KLA-LT-00484,KL26040000000484,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC04
+L0485,KLA-LT-00485,KL26050000000485,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC05
+L0486,KLA-LT-00486,KL26010000000486,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,in_stock,DC01
+L0487,KLA-LT-00487,KL26020000000487,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC02
+L0488,KLA-LT-00488,KL26030000000488,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,in_stock,DC03
+L0489,KLA-LT-00489,KL26040000000489,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0490,KLA-LT-00490,KL26050000000490,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC05
+L0491,KLA-LT-00491,KL26010000000491,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC01
+L0492,KLA-LT-00492,KL26020000000492,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC02
+L0493,KLA-LT-00493,KL26030000000493,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,in_stock,DC03
+L0494,KLA-LT-00494,KL26040000000494,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC04
+L0495,KLA-LT-00495,KL26050000000495,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC05
+L0496,KLA-LT-00496,KL26010000000496,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,distributed,DC01
+L0497,KLA-LT-00497,KL26020000000497,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,740,distributed,DC02
+L0498,KLA-LT-00498,KL26030000000498,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0499,KLA-LT-00499,KL26040000000499,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1080,distributed,DC04
+L0500,KLA-LT-00500,KL26050000000500,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC05
+L0501,KLA-LT-00501,KL26010000000501,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,in_stock,DC01
+L0502,KLA-LT-00502,KL26020000000502,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0503,KLA-LT-00503,KL26030000000503,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,in_stock,DC03
+L0504,KLA-LT-00504,KL26040000000504,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC04
+L0505,KLA-LT-00505,KL26050000000505,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC05
+L0506,KLA-LT-00506,KL26010000000506,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC01
+L0507,KLA-LT-00507,KL26020000000507,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC02
+L0508,KLA-LT-00508,KL26030000000508,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC03
+L0509,KLA-LT-00509,KL26040000000509,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC04
+L0510,KLA-LT-00510,KL26050000000510,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,in_stock,DC05
+L0511,KLA-LT-00511,KL26010000000511,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,in_stock,DC01
+L0512,KLA-LT-00512,KL26020000000512,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC02
+L0513,KLA-LT-00513,KL26030000000513,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC03
+L0514,KLA-LT-00514,KL26040000000514,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,distributed,DC04
+L0515,KLA-LT-00515,KL26050000000515,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0516,KLA-LT-00516,KL26010000000516,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC01
+L0517,KLA-LT-00517,KL26020000000517,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC02
+L0518,KLA-LT-00518,KL26030000000518,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0519,KLA-LT-00519,KL26040000000519,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,in_stock,DC04
+L0520,KLA-LT-00520,KL26050000000520,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1930,distributed,DC05
+L0521,KLA-LT-00521,KL26010000000521,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,in_stock,DC01
+L0522,KLA-LT-00522,KL26020000000522,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC02
+L0523,KLA-LT-00523,KL26030000000523,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC03
+L0524,KLA-LT-00524,KL26040000000524,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1170,in_stock,DC04
+L0525,KLA-LT-00525,KL26050000000525,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1430,distributed,DC05
+L0526,KLA-LT-00526,KL26010000000526,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC01
+L0527,KLA-LT-00527,KL26020000000527,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC02
+L0528,KLA-LT-00528,KL26030000000528,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1910,distributed,DC03
+L0529,KLA-LT-00529,KL26040000000529,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0530,KLA-LT-00530,KL26050000000530,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC05
+L0531,KLA-LT-00531,KL26010000000531,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1060,in_stock,DC01
+L0532,KLA-LT-00532,KL26020000000532,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC02
+L0533,KLA-LT-00533,KL26030000000533,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC03
+L0534,KLA-LT-00534,KL26040000000534,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,in_stock,DC04
+L0535,KLA-LT-00535,KL26050000000535,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,distributed,DC05
+L0536,KLA-LT-00536,KL26010000000536,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC01
+L0537,KLA-LT-00537,KL26020000000537,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,820,in_stock,DC02
+L0538,KLA-LT-00538,KL26030000000538,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,distributed,DC03
+L0539,KLA-LT-00539,KL26040000000539,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC04
+L0540,KLA-LT-00540,KL26050000000540,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC05
+L0541,KLA-LT-00541,KL26010000000541,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,distributed,DC01
+L0542,KLA-LT-00542,KL26020000000542,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,in_stock,DC02
+L0543,KLA-LT-00543,KL26030000000543,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC03
+L0544,KLA-LT-00544,KL26040000000544,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,distributed,DC04
+L0545,KLA-LT-00545,KL26050000000545,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC05
+L0546,KLA-LT-00546,KL26010000000546,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,920,in_stock,DC01
+L0547,KLA-LT-00547,KL26020000000547,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC02
+L0548,KLA-LT-00548,KL26030000000548,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,in_stock,DC03
+L0549,KLA-LT-00549,KL26040000000549,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC04
+L0550,KLA-LT-00550,KL26050000000550,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1820,distributed,DC05
+L0551,KLA-LT-00551,KL26010000000551,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC01
+L0552,KLA-LT-00552,KL26020000000552,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC02
+L0553,KLA-LT-00553,KL26030000000553,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,in_stock,DC03
+L0554,KLA-LT-00554,KL26040000000554,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,900,distributed,DC04
+L0555,KLA-LT-00555,KL26050000000555,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0556,KLA-LT-00556,KL26010000000556,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1150,in_stock,DC01
+L0557,KLA-LT-00557,KL26020000000557,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,in_stock,DC02
+L0558,KLA-LT-00558,KL26030000000558,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC03
+L0559,KLA-LT-00559,KL26040000000559,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1240,distributed,DC04
+L0560,KLA-LT-00560,KL26050000000560,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC05
+L0561,KLA-LT-00561,KL26010000000561,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC01
+L0562,KLA-LT-00562,KL26020000000562,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,distributed,DC02
+L0563,KLA-LT-00563,KL26030000000563,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC03
+L0564,KLA-LT-00564,KL26040000000564,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC04
+L0565,KLA-LT-00565,KL26050000000565,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,distributed,DC05
+L0566,KLA-LT-00566,KL26010000000566,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,distributed,DC01
+L0567,KLA-LT-00567,KL26020000000567,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1260,distributed,DC02
+L0568,KLA-LT-00568,KL26030000000568,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC03
+L0569,KLA-LT-00569,KL26040000000569,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC04
+L0570,KLA-LT-00570,KL26050000000570,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC05
+L0571,KLA-LT-00571,KL26010000000571,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1100,distributed,DC01
+L0572,KLA-LT-00572,KL26020000000572,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC02
+L0573,KLA-LT-00573,KL26030000000573,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1470,distributed,DC03
+L0574,KLA-LT-00574,KL26040000000574,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1800,distributed,DC04
+L0575,KLA-LT-00575,KL26050000000575,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,in_stock,DC05
+L0576,KLA-LT-00576,KL26010000000576,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1990,distributed,DC01
+L0577,KLA-LT-00577,KL26020000000577,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,780,distributed,DC02
+L0578,KLA-LT-00578,KL26030000000578,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,960,distributed,DC03
+L0579,KLA-LT-00579,KL26040000000579,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,in_stock,DC04
+L0580,KLA-LT-00580,KL26050000000580,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,distributed,DC05
+L0581,KLA-LT-00581,KL26010000000581,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1490,distributed,DC01
+L0582,KLA-LT-00582,KL26020000000582,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1780,distributed,DC02
+L0583,KLA-LT-00583,KL26030000000583,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC03
+L0584,KLA-LT-00584,KL26040000000584,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1970,in_stock,DC04
+L0585,KLA-LT-00585,KL26050000000585,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,760,distributed,DC05
+L0586,KLA-LT-00586,KL26010000000586,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,940,in_stock,DC01
+L0587,KLA-LT-00587,KL26020000000587,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1120,distributed,DC02
+L0588,KLA-LT-00588,KL26030000000588,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1210,in_stock,DC03
+L0589,KLA-LT-00589,KL26040000000589,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1450,in_stock,DC04
+L0590,KLA-LT-00590,KL26050000000590,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1740,distributed,DC05
+L0591,KLA-LT-00591,KL26010000000591,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1300,in_stock,DC01
+L0592,KLA-LT-00592,KL26020000000592,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,distributed,DC02
+L0593,KLA-LT-00593,KL26030000000593,KangaLife,KangaBook Start 13,13 inch,Intel Core i3,8,256,800,in_stock,DC03
+L0594,KLA-LT-00594,KL26040000000594,KangaLife,KangaBook Learn 14,14 inch,Intel Core i5,8,256,880,distributed,DC04
+L0595,KLA-LT-00595,KL26050000000595,KangaLife,KangaBook Learn Plus 14,14 inch,Intel Core i5,16,512,1040,distributed,DC05
+L0596,KLA-LT-00596,KL26010000000596,KangaLife,KangaBook Work 15,15 inch,Intel Core i5,16,512,1190,distributed,DC01
+L0597,KLA-LT-00597,KL26020000000597,KangaLife,KangaBook Pro 14,14 inch,Intel Core i7,16,512,1410,in_stock,DC02
+L0598,KLA-LT-00598,KL26030000000598,KangaLife,KangaBook Pro 16,16 inch,Intel Core i7,32,1000,1760,in_stock,DC03
+L0599,KLA-LT-00599,KL26040000000599,KangaLife,KangaBook Flex 14,14 inch touchscreen,AMD Ryzen 5,16,512,1220,distributed,DC04
+L0600,KLA-LT-00600,KL26050000000600,KangaLife,KangaBook Studio 16,16 inch,AMD Ryzen 7,32,1000,1950,in_stock,DC05

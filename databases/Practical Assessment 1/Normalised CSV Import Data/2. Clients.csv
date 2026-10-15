@@ -1,0 +1,153 @@
+client_id,client_name,client_type,client_suburb,client_postcode,client_phone,client_email
+C0040,Hillview Secondary College,Training Provider,Pakenham,3185,03 6439 3933,enquiries@hillviewsecondarycollege.edu.au
+C0061,Harbour Youth Centre,Community Organisation,Traralgon,3388,03 9434 5251,contact@harbouryouthcentre.org.au
+C0084,Lakeside Community Hub,Community Organisation,Broadmeadows,3462,03 8539 7004,contact@lakesidecommunityhub.org.au
+C0062,Eastern Youth Centre,Small Business,Broadmeadows,3995,03 8921 4354,info@easternyouthcentre.com.au
+C0046,Sunrise Training Centre,Training Provider,Shepparton,3467,03 6473 1601,enquiries@sunrisetrainingcentre.edu.au
+C0066,Central Secondary College,School,Footscray,3071,03 9016 2802,admin@centralsecondarycollege.vic.edu.au
+C0023,Metro Secondary College,School,Preston,3000,03 6193 3814,admin@metrosecondarycollege.vic.edu.au
+C0008,Valley Primary School,Training Provider,Werribee,3058,03 6670 1144,enquiries@valleyprimaryschool.edu.au
+C0045,Western Training Centre,Community Organisation,Noble Park,3797,03 5681 1296,contact@westerntrainingcentre.org.au
+C0002,Valley Business Services,Community Organisation,Frankston,3815,03 6247 9934,contact@valleybusinessservices.org.au
+C0081,Metro Skills Academy,School,Belmont,3024,03 5427 5547,admin@metroskillsacademy.vic.edu.au
+C0018,Horizon Skills Academy,Community Organisation,Werribee,3815,03 9824 3458,contact@horizonskillsacademy.org.au
+C0149,Harbour Primary School,School,Craigieburn,3368,03 7632 9469,admin@harbourprimaryschool.vic.edu.au
+C0180,Eastern Training Centre,Training Provider,Footscray,3519,03 5187 9657,enquiries@easterntrainingcentre.edu.au
+C0017,Western Skills Academy,Community Organisation,Dandenong,3226,03 7352 2251,contact@westernskillsacademy.org.au
+C0021,Southern Education Network,Training Provider,Geelong,3396,03 5407 3521,enquiries@southerneducationnetwork.edu.au
+C0025,Eastfield Skills Academy,Training Provider,Werribee,3075,03 9776 4239,enquiries@eastfieldskillsacademy.edu.au
+C0055,Northern Secondary College,Small Business,Eaglehawk,3543,03 9798 4091,info@northernsecondarycollege.com.au
+C0048,Regional Neighbourhood House,Community Organisation,Frankston,3088,03 8687 6310,contact@regionalneighbourhoodhouse.org.au
+C0157,Horizon Primary School,Small Business,Dandenong,3343,03 5104 1510,info@horizonprimaryschool.com.au
+C0016,Regional Youth Centre,Small Business,Melton,3626,03 8781 1131,info@regionalyouthcentre.com.au
+C0026,Valley Secondary College,School,Frankston,3684,03 6653 8599,admin@valleysecondarycollege.vic.edu.au
+C0014,Eastfield Secondary College,Community Organisation,Belmont,3544,03 7129 9425,contact@eastfieldsecondarycollege.org.au
+C0057,Metro Education Network,School,Wendouree,3027,03 5265 4283,admin@metroeducationnetwork.vic.edu.au
+C0027,Eastfield Education Network,Community Organisation,Bendigo,3529,03 9618 8664,contact@eastfieldeducationnetwork.org.au
+C0036,Community Community Hub,Community Organisation,Geelong,3681,03 7760 8040,contact@communitycommunityhub.org.au
+C0135,Valley Skills Academy,School,Noble Park,3486,03 6580 4267,admin@valleyskillsacademy.vic.edu.au
+C0029,Westgate Training Centre,Community Organisation,Coburg,3961,03 9438 2638,contact@westgatetrainingcentre.org.au
+C0059,Northside Youth Centre,Small Business,Sunbury,3946,03 8381 2613,info@northsideyouthcentre.com.au
+C0031,Eastern Neighbourhood House,Training Provider,Werribee,3085,03 9156 7599,enquiries@easternneighbourhoodhouse.edu.au
+C0009,Sunrise Youth Centre,School,Pakenham,3001,03 7202 2437,admin@sunriseyouthcentre.vic.edu.au
+C0032,Central Education Network,Small Business,Wendouree,3239,03 7500 5458,info@centraleducationnetwork.com.au
+C0011,Greenway Primary School,Small Business,Bendigo,3975,03 5142 4500,info@greenwayprimaryschool.com.au
+C0049,Rivergum Secondary College,Training Provider,Noble Park,3834,03 6658 7466,enquiries@rivergumsecondarycollege.edu.au
+C0098,Northern Training Centre,Community Organisation,Ballarat,3774,03 5692 4649,contact@northerntrainingcentre.org.au
+C0056,Hillview Skills Academy,Community Organisation,Eaglehawk,3000,03 9711 6217,contact@hillviewskillsacademy.org.au
+C0063,Northside Learning Institute,School,Werribee,3950,03 6043 8243,admin@northsidelearninginstitute.vic.edu.au
+C0050,Valley Community Hub,School,Craigieburn,3204,03 7983 8364,admin@valleycommunityhub.vic.edu.au
+C0158,Western Primary School,School,Shepparton,3299,03 9300 4079,admin@westernprimaryschool.vic.edu.au
+C0037,Northern Youth Centre,Training Provider,Sunbury,3948,03 6997 1681,enquiries@northernyouthcentre.edu.au
+C0010,Valley Youth Centre,School,Melton,3818,03 7937 1107,admin@valleyyouthcentre.vic.edu.au
+C0171,Harbour Training Centre,School,Eaglehawk,3568,03 6931 8994,admin@harbourtrainingcentre.vic.edu.au
+C0161,Northern Skills Academy,Small Business,Sunbury,3430,03 8820 1803,info@northernskillsacademy.com.au
+C0051,Eastfield Neighbourhood House,Small Business,Preston,3321,03 5760 9973,info@eastfieldneighbourhoodhouse.com.au
+C0005,Regional Community Hub,Community Organisation,Sunbury,3220,03 5908 7255,contact@regionalcommunityhub.org.au
+C0052,Eastern Learning Institute,School,Noble Park,3054,03 7542 3381,admin@easternlearninginstitute.vic.edu.au
+C0146,Parklands Learning Institute,Training Provider,Traralgon,3411,03 8016 9280,enquiries@parklandslearninginstitute.edu.au
+C0110,Greenway Training Centre,School,Craigieburn,3943,03 5585 9240,admin@greenwaytrainingcentre.vic.edu.au
+C0024,Sunrise Community Hub,Small Business,Noble Park,3868,03 5830 5828,info@sunrisecommunityhub.com.au
+C0039,Eastern Business Services,Training Provider,Geelong,3128,03 9762 7259,enquiries@easternbusinessservices.edu.au
+C0169,Hillview Primary School,Small Business,Noble Park,3481,03 7566 5848,info@hillviewprimaryschool.com.au
+C0160,Community Business Services,Community Organisation,Shepparton,3430,03 9843 8452,contact@communitybusinessservices.org.au
+C0047,Regional Primary School,Small Business,Noble Park,3296,03 8091 2126,info@regionalprimaryschool.com.au
+C0053,Parklands Skills Academy,School,Belmont,3393,03 8007 3816,admin@parklandsskillsacademy.vic.edu.au
+C0124,Eastfield Youth Centre,Training Provider,Eaglehawk,3587,03 8219 7873,enquiries@eastfieldyouthcentre.edu.au
+C0108,Community Youth Centre,Community Organisation,Broadmeadows,3227,03 8930 7566,contact@communityyouthcentre.org.au
+C0155,Harbour Community Hub,School,Preston,3443,03 5559 8969,admin@harbourcommunityhub.vic.edu.au
+C0067,Southern Community Hub,Small Business,Ballarat,3904,03 7531 9743,info@southerncommunityhub.com.au
+C0141,Community Primary School,Small Business,Wendouree,3405,03 8857 2448,info@communityprimaryschool.com.au
+C0150,Regional Education Network,Community Organisation,Traralgon,3787,03 6803 5402,contact@regionaleducationnetwork.org.au
+C0175,Regional Business Services,School,Ballarat,3030,03 5520 5997,admin@regionalbusinessservices.vic.edu.au
+C0156,Parklands Youth Centre,Small Business,Noble Park,3745,03 6918 8242,info@parklandsyouthcentre.com.au
+C0070,Rivergum Business Services,Small Business,Footscray,3260,03 6596 9959,info@rivergumbusinessservices.com.au
+C0130,Sunrise Education Network,School,Wendouree,3326,03 5988 4063,admin@sunriseeducationnetwork.vic.edu.au
+C0173,Greenway Neighbourhood House,Community Organisation,Werribee,3395,03 6988 2004,contact@greenwayneighbourhoodhouse.org.au
+C0167,Rivergum Learning Institute,School,Noble Park,3988,03 6715 3543,admin@rivergumlearninginstitute.vic.edu.au
+C0122,Western Secondary College,Training Provider,Bendigo,3092,03 5450 5700,enquiries@westernsecondarycollege.edu.au
+C0060,Metro Community Hub,Small Business,Traralgon,3020,03 6883 5077,info@metrocommunityhub.com.au
+C0006,Central Primary School,Community Organisation,Craigieburn,3283,03 8210 2976,contact@centralprimaryschool.org.au
+C0065,Valley Learning Institute,School,Frankston,3264,03 5901 2855,admin@valleylearninginstitute.vic.edu.au
+C0119,Sunrise Skills Academy,Training Provider,Preston,3556,03 7096 3891,enquiries@sunriseskillsacademy.edu.au
+C0069,Eastfield Community Hub,Small Business,Wendouree,3380,03 8651 1235,info@eastfieldcommunityhub.com.au
+C0090,Horizon Community Hub,School,Ballarat,3858,03 6262 9567,admin@horizoncommunityhub.vic.edu.au
+C0163,Greenway Community Hub,Community Organisation,Werribee,3037,03 8377 1109,contact@greenwaycommunityhub.org.au
+C0072,Western Community Hub,School,Shepparton,3713,03 8976 6321,admin@westerncommunityhub.vic.edu.au
+C0092,Metro Primary School,Community Organisation,Broadmeadows,3257,03 5336 7109,contact@metroprimaryschool.org.au
+C0145,Parklands Education Network,Small Business,Belmont,3710,03 8093 8355,info@parklandseducationnetwork.com.au
+C0127,Harbour Education Network,School,Ballarat,3970,03 8315 4778,admin@harboureducationnetwork.vic.edu.au
+C0044,Sunrise Learning Institute,Small Business,Craigieburn,3630,03 5368 6487,info@sunriselearninginstitute.com.au
+C0105,Rivergum Neighbourhood House,Training Provider,Dandenong,3115,03 9765 7622,enquiries@rivergumneighbourhoodhouse.edu.au
+C0097,Horizon Youth Centre,School,Frankston,3991,03 8418 1040,admin@horizonyouthcentre.vic.edu.au
+C0022,Greenway Skills Academy,Small Business,Ballarat,3388,03 5599 6479,info@greenwayskillsacademy.com.au
+C0013,Sunrise Primary School,Training Provider,Belmont,3098,03 9763 4501,enquiries@sunriseprimaryschool.edu.au
+C0003,Northern Learning Institute,Small Business,Footscray,3276,03 6937 1982,info@northernlearninginstitute.com.au
+C0073,Northside Community Hub,Training Provider,Traralgon,3329,03 7108 2661,enquiries@northsidecommunityhub.edu.au
+C0058,Southern Youth Centre,Community Organisation,Craigieburn,3316,03 7183 2854,contact@southernyouthcentre.org.au
+C0028,Hillview Business Services,Small Business,Geelong,3205,03 7089 2894,info@hillviewbusinessservices.com.au
+C0030,Westgate Secondary College,Small Business,Geelong,3042,03 6000 8222,info@westgatesecondarycollege.com.au
+C0054,Parklands Community Hub,Small Business,Belmont,3575,03 5791 7448,info@parklandscommunityhub.com.au
+C0064,Parklands Neighbourhood House,Small Business,Frankston,3664,03 6426 4120,info@parklandsneighbourhoodhouse.com.au
+C0042,Regional Skills Academy,School,Sunbury,3585,03 8010 8261,admin@regionalskillsacademy.vic.edu.au
+C0126,Northside Secondary College,Training Provider,Broadmeadows,3499,03 8644 2133,enquiries@northsidesecondarycollege.edu.au
+C0143,Westgate Neighbourhood House,Community Organisation,Wendouree,3224,03 7108 6741,contact@westgateneighbourhoodhouse.org.au
+C0138,Southern Secondary College,Training Provider,Dandenong,3255,03 7966 2744,enquiries@southernsecondarycollege.edu.au
+C0015,Lakeside Education Network,Training Provider,Belmont,3023,03 5183 8450,enquiries@lakesideeducationnetwork.edu.au
+C0117,Northern Education Network,Community Organisation,Shepparton,3849,03 8180 3545,contact@northerneducationnetwork.org.au
+C0159,Community Secondary College,Small Business,Belmont,3192,03 8187 6966,info@communitysecondarycollege.com.au
+C0012,Northside Training Centre,Community Organisation,Belmont,3706,03 6857 7120,contact@northsidetrainingcentre.org.au
+C0095,Eastfield Training Centre,Community Organisation,Traralgon,3988,03 7620 2644,contact@eastfieldtrainingcentre.org.au
+C0034,Rivergum Education Network,Community Organisation,Ballarat,3357,03 8876 7588,contact@rivergumeducationnetwork.org.au
+C0038,Northside Neighbourhood House,Small Business,Footscray,3298,03 6162 5072,info@northsideneighbourhoodhouse.com.au
+C0019,Western Learning Institute,Small Business,Melton,3972,03 8251 4838,info@westernlearninginstitute.com.au
+C0162,Sunrise Secondary College,Training Provider,Bendigo,3821,03 6370 9819,enquiries@sunrisesecondarycollege.edu.au
+C0041,Rivergum Primary School,Training Provider,Preston,3760,03 8138 3563,enquiries@rivergumprimaryschool.edu.au
+C0033,Hillview Training Centre,School,Ballarat,3518,03 9738 2695,admin@hillviewtrainingcentre.vic.edu.au
+C0004,Southern Business Services,Small Business,Frankston,3322,03 7159 7913,info@southernbusinessservices.com.au
+C0093,Horizon Secondary College,Small Business,Werribee,3524,03 7222 3274,info@horizonsecondarycollege.com.au
+C0096,Southern Neighbourhood House,Small Business,Preston,3120,03 9420 3254,info@southernneighbourhoodhouse.com.au
+C0118,Rivergum Skills Academy,Community Organisation,Werribee,3505,03 5076 1172,contact@rivergumskillsacademy.org.au
+C0116,Harbour Secondary College,School,Eaglehawk,3431,03 9897 1080,admin@harboursecondarycollege.vic.edu.au
+C0020,Horizon Neighbourhood House,Community Organisation,Dandenong,3400,03 5869 4668,contact@horizonneighbourhoodhouse.org.au
+C0154,Northern Community Hub,School,Werribee,3926,03 8111 6382,admin@northerncommunityhub.vic.edu.au
+C0139,Lakeside Neighbourhood House,Community Organisation,Noble Park,3731,03 5496 6792,contact@lakesideneighbourhoodhouse.org.au
+C0068,Greenway Secondary College,Training Provider,Wendouree,3081,03 5101 7909,enquiries@greenwaysecondarycollege.edu.au
+C0129,Harbour Neighbourhood House,School,Werribee,3949,03 8087 2258,admin@harbourneighbourhoodhouse.vic.edu.au
+C0132,Horizon Business Services,Training Provider,Ballarat,3271,03 8858 1368,enquiries@horizonbusinessservices.edu.au
+C0087,Metro Learning Institute,School,Werribee,3618,03 5339 2817,admin@metrolearninginstitute.vic.edu.au
+C0176,Valley Neighbourhood House,Small Business,Craigieburn,3305,03 5824 1707,info@valleyneighbourhoodhouse.com.au
+C0172,Westgate Education Network,Small Business,Werribee,3931,03 7685 8994,info@westgateeducationnetwork.com.au
+C0125,Southern Primary School,Small Business,Dandenong,3094,03 6269 7960,info@southernprimaryschool.com.au
+C0035,Harbour Skills Academy,School,Craigieburn,3472,03 9848 1063,admin@harbourskillsacademy.vic.edu.au
+C0144,Community Learning Institute,Training Provider,Noble Park,3807,03 9629 9275,enquiries@communitylearninginstitute.edu.au
+C0100,Northside Education Network,School,Werribee,3812,03 9019 2748,admin@northsideeducationnetwork.vic.edu.au
+C0074,Parklands Business Services,Community Organisation,Noble Park,3491,03 7940 9790,contact@parklandsbusinessservices.org.au
+C0115,Greenway Business Services,School,Noble Park,3624,03 9782 6649,admin@greenwaybusinessservices.vic.edu.au
+C0164,Eastern Primary School,Community Organisation,Broadmeadows,3819,03 9397 4794,contact@easternprimaryschool.org.au
+C0170,Horizon Education Network,Community Organisation,Ballarat,3999,03 9142 5632,contact@horizoneducationnetwork.org.au
+C0099,Valley Education Network,Community Organisation,Melton,3212,03 9045 1785,contact@valleyeducationnetwork.org.au
+C0174,Central Learning Institute,Community Organisation,Traralgon,3187,03 8911 2970,contact@centrallearninginstitute.org.au
+C0043,Greenway Learning Institute,Training Provider,Noble Park,3582,03 9011 8494,enquiries@greenwaylearninginstitute.edu.au
+C0078,Westgate Youth Centre,Training Provider,Coburg,3229,03 5009 9760,enquiries@westgateyouthcentre.edu.au
+C0120,Regional Training Centre,Training Provider,Frankston,3487,03 6531 2408,enquiries@regionaltrainingcentre.edu.au
+C0131,Rivergum Community Hub,Community Organisation,Belmont,3824,03 7700 5783,contact@rivergumcommunityhub.org.au
+C0151,Sunrise Business Services,School,Melton,3716,03 8782 1664,admin@sunrisebusinessservices.vic.edu.au
+C0104,Lakeside Secondary College,Small Business,Eaglehawk,3613,03 7527 9898,info@lakesidesecondarycollege.com.au
+C0001,Metro Training Centre,Small Business,Eaglehawk,3605,03 9160 6418,info@metrotrainingcentre.com.au
+C0168,Community Neighbourhood House,School,Footscray,3904,03 9452 3351,admin@communityneighbourhoodhouse.vic.edu.au
+C0147,Eastfield Primary School,Community Organisation,Wendouree,3331,03 5782 1265,contact@eastfieldprimaryschool.org.au
+C0166,Western Youth Centre,School,Bendigo,3035,03 5180 1353,admin@westernyouthcentre.vic.edu.au
+C0077,Lakeside Primary School,Community Organisation,Bendigo,3449,03 5047 4279,contact@lakesideprimaryschool.org.au
+C0121,Regional Secondary College,Community Organisation,Craigieburn,3161,03 7445 9061,contact@regionalsecondarycollege.org.au
+C0107,Northern Primary School,Community Organisation,Eaglehawk,3385,03 6071 8822,contact@northernprimaryschool.org.au
+C0082,Eastfield Learning Institute,Community Organisation,Belmont,3659,03 5730 5778,contact@eastfieldlearninginstitute.org.au
+C0079,Harbour Business Services,Training Provider,Footscray,3900,03 9171 8375,enquiries@harbourbusinessservices.edu.au
+C0111,Community Education Network,Community Organisation,Footscray,3303,03 6641 5445,contact@communityeducationnetwork.org.au
+C0007,Northern Neighbourhood House,Training Provider,Sunbury,3976,03 6171 5463,enquiries@northernneighbourhoodhouse.edu.au
+C0112,Central Business Services,Small Business,Belmont,3901,03 7779 3651,info@centralbusinessservices.com.au
+C0165,Northside Business Services,Community Organisation,Ballarat,3998,03 9716 6466,contact@northsidebusinessservices.org.au
+C0088,Eastern Secondary College,Small Business,Melton,3480,03 6391 4254,info@easternsecondarycollege.com.au
+C0137,Central Skills Academy,Training Provider,Footscray,3169,03 9870 9441,enquiries@centralskillsacademy.edu.au
+C0076,Lakeside Training Centre,Training Provider,Noble Park,3434,03 7261 7962,enquiries@lakesidetrainingcentre.edu.au
+C0080,Parklands Primary School,Community Organisation,Craigieburn,3441,03 8241 5406,contact@parklandsprimaryschool.org.au
