@@ -1,5 +1,6 @@
 "use client";
 import { Anchor, Container, Group, Menu, Text } from '@mantine/core';
+import { supabaseTasks, supabaseTaskHref } from '@/app/lib/supabase-tasks';
 
 const navItems = [
 	{ label: 'Home', href: '/' },
@@ -12,7 +13,14 @@ const navItems = [
       { label: 'Feedback', href: '/mantine/feedback' },
 		],
 	},
-	{ label: 'Supabase Practice', href: '/supabase' },
+	{
+		label: 'Supabase Practice',
+		href: '/supabase',
+		items: [
+			{ label: 'Overview', href: '/supabase' },
+			...supabaseTasks.map((t) => ({ label: `Task ${t.n}: ${t.title}`, href: supabaseTaskHref(t.n) })),
+		],
+	},
 ];
 
 export default function Navbar() {

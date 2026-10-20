@@ -1,6 +1,6 @@
 "use client";
 
-import ProductCard from '@/lib/components/product-card';
+import ProductCard from '@/app/lib/components/product-card';
 import { Flex, Stack } from '@mantine/core';
 
 export default function Demo() {
