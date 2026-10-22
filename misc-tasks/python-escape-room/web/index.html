@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Python Escape Room</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔐</text></svg>">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="logo">🔐</span><span>Python Escape Room</span></div>
+  <div class="code-wrap">
+    <span id="code-label" class="label">Escape code</span>
+    <div id="code" class="code"></div>
+    <button id="trophy" class="trophy" hidden title="Show your results">🏆</button>
+  </div>
+  <div class="timer-wrap"><span class="label">Time</span><span id="timer" class="timer">00:00:00</span></div>
+</header>
+
+<div id="offline" class="offline" hidden>
+  Lost connection to the game. Is <code>play.py</code> still running? Reconnecting…
+</div>
+
+<div class="layout">
+  <nav class="map" aria-label="Rooms">
+    <div id="map" class="map-inner"></div>
+  </nav>
+  <main id="room" class="room"><p class="muted">Loading…</p></main>
+</div>
+
+<div id="overlay" class="overlay" hidden>
+  <div class="door-frame">
+    <div id="overlay-content" class="door-content"></div>
+    <div class="door left"></div>
+    <div class="door right"></div>
+  </div>
+</div>
+
+<div id="toast" class="toast" hidden></div>
+
+<script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# The Manor ledger, 1891
+# date,item,amount
+1891-01-03,candles,12
+1891-01-05,coal,40
+
+1891-01-09, bread, 7
+1891-02-11,candles,8
+1891-02-14,coal,35
+ 1891-02-20 , ink , 3 
+
+1891-03-02,candles,15
+1891-03-08,bread,9

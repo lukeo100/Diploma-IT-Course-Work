@@ -1,0 +1,16 @@
+# Star catalogue: name,constellation,magnitude,distance (light years)
+Sirius,Canis Major,-1.46,8.6
+Canopus,Carina,-0.74,310
+Arcturus,Bootes,-0.05,36.7
+Vega,Lyra,0.03,25
+Capella,Auriga,0.08,42.9
+Rigel,Orion,0.13,860
+Procyon,Canis Minor,0.34,11.5
+Betelgeuse,Orion,0.50,548
+
+Mystery Star,Unknown,bright,999
+Polaris,Ursa Minor,1.98,433
+Bellatrix,Orion,1.64,250
+Half a row,Orion
+ Mintaka , Orion , 2.23 , 1200 
+Alcor,Ursa Major,3.99,82
